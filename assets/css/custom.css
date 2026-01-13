@@ -1,3 +1,8 @@
+.section-title h2 {
+  color: #4b1b3b;
+  font-weight: 900;
+}
+
 .hero-text .btn+.btn {
   margin-left: 12px;
 }
@@ -145,11 +150,7 @@
 
 /* ========================================================================== */
 
-/* Story section tone */
-.cordydew-story .section-title h2 {
-  color: #4b1b3b;
-  font-weight: 900;
-}
+
 
 .cordydew-story .section-title p {
   color: rgba(75, 27, 59, .85);
@@ -243,20 +244,13 @@
 }
 
 /* ===== Why choose us ===== */
-.why-sec .section-title h2 {
-  color: #4b1b3b;
-  font-weight: 900;
-}
 
 .why-sec .section-title p {
   color: rgba(75, 27, 59, .85);
 }
 
 /* ===== Why choose us ===== */
-.why-sec .section-title h2 {
-  color: #4b1b3b;
-  font-weight: 900;
-}
+
 
 .why-sec .section-title p {
   color: rgba(75, 27, 59, .85);
@@ -539,13 +533,6 @@
     linear-gradient(180deg, #fbfbff, #ffffff);
 }
 
-.cordydew-title h2 {
-  font-size: 38px;
-  line-height: 1.25;
-  margin: 12px 0 12px;
-  color: #14121f;
-  letter-spacing: -0.3px;
-}
 
 .cordydew-title p {
   font-size: 16px;
