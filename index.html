@@ -353,7 +353,7 @@
                                 Probiotics cho hệ tiêu hóa khỏe mạnh.
                             </p>
 
-                            <a href="#trial" class="btn">Trải nghiệm ngay</a>
+                            <a href="#" class="btn" data-video-open>Trải nghiệm ngay</a>
                             <a href="#partner" class="btn btn-outline">Đăng ký làm đối tác phân phối</a>
                         </div>
                     </div>
@@ -1325,6 +1325,22 @@
     </div>
 
 
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+        <div class="video-backdrop" data-video-close></div>
+
+        <div class="video-dialog" role="dialog" aria-modal="true">
+            <button class="video-close" type="button" data-video-close>&times;</button>
+
+            <div class="video-wrap">
+                <iframe id="videoFrame" src="" title="YouTube video player" frameborder="0"
+                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
 
     <!--====================================================================
                             Include All Js File 
@@ -1344,6 +1360,7 @@
     <script src="assets\js\wow.min.js"></script>
     <script src="assets\js\isotope.pkgd.min.js"></script>
     <script src="assets\js\main.js"></script>
+    <script src="assets\js\custom.js"></script>
 
 </body>
 
