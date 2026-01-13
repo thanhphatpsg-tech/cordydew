@@ -164,6 +164,7 @@
   box-shadow: 0 14px 30px rgba(0,0,0,.08);
   position: relative;
   overflow: hidden;
+  min-height: 345px;
 }
 
 /* icon */
