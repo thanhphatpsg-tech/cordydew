@@ -824,7 +824,7 @@
                         size: 150,
                         value: 0.6,
                         lineCap: 'round',
-                        fill: {color: '#6563F7'}
+                        fill: {color: '#A78EC7'}
                     }).on('circle-animation-progress', function(event, progress) {
                     $(this).find('.percent').html(Math.round(60 * progress) + '<i>%</i>');
                     });
@@ -834,7 +834,7 @@
                         size: 150,
                         value: 0.75,
                         lineCap: 'round',
-                        fill: {color: '#6563F7'}
+                        fill: {color: '#A78EC7'}
                   }).on('circle-animation-progress', function(event, progress) {
                     $(this).find('.percent').html(Math.round(75 * progress) + '<i>%</i>');
                   });
@@ -844,7 +844,7 @@
                         size: 150,
                         value: 0.9,
                         lineCap: 'round',
-                        fill: {color: '#6563F7'}
+                        fill: {color: '#A78EC7'}
                   }).on('circle-animation-progress', function(event, progress) {
                     $(this).find('.percent').html(Math.round(90 * progress) + '<i>%</i>');
                   });

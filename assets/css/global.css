@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #F6F8FA;
+    background: #FFF9F2;
     position: relative;
     margin: 0;
     padding: 0;
@@ -85,7 +85,7 @@ a {
 }
 
 a:hover {
-    color: #6563f7;
+    color: #A78EC7;
 }
 
 ul,
@@ -136,7 +136,7 @@ img {
     position: relative;
     width: 30px;
     height: 30px;
-    color: #FE5D89;
+    color: #5C3A87;
     font-size: 14px;
     line-height: 29px;
     text-align: center;
@@ -151,8 +151,8 @@ img {
 
 .social-icon-one li a:hover {
     color: #ffffff;
-    background-color: #FE5D89;
-    border: 2px solid #FE5D89;
+    background-color: #5C3A87;
+    border: 2px solid #5C3A87;
 }
 
 
@@ -213,7 +213,7 @@ img {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    color: #FE5D89;
+    color: #5C3A87;
     z-index: 9;
     text-align: center;
     font-size: 14px;
@@ -228,13 +228,13 @@ img {
 
 .btn:hover {
     color: #fff;
-    background: #FE5D89;
-    border: 1px solid #FE5D89;
+    background: #5C3A87;
+    border: 1px solid #5C3A87;
 }
 
 .btn-bg {
-    border: 1px solid #FE5D89;
-    background: #FE5D89;
+    border: 1px solid #5C3A87;
+    background: #5C3A87;
     color: #fff;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -253,8 +253,8 @@ img {
 }
 
 .btn-bg:hover {
-    border: 1px solid #6563f7;
-    background: #6563f7;
+    border: 1px solid #A78EC7;
+    background: #A78EC7;
     color: #fff;
 }
 .btn-bg2 {
@@ -278,8 +278,8 @@ img {
 }
 
 .btn-bg2:hover {
-    border: 1px solid #FE5D89;
-    background: #FE5D89;
+    border: 1px solid #5C3A87;
+    background: #5C3A87;
     color: #fff;
 }
 .btn-bg3 {
@@ -300,8 +300,8 @@ img {
 
 .btn-bg3:hover {
     color: #fff;
-    background: #FE5D89;
-    border: 1px solid #FE5D89;
+    background: #5C3A87;
+    border: 1px solid #5C3A87;
 }
 .btn-bg4 {
     background: #FFFFFF;
@@ -331,7 +331,7 @@ img {
 }
 
 .gray-bg {
-    background: #F6F8FA;
+    background: #FFF9F2;
 }
 
 .gray-bg2 {
@@ -349,10 +349,10 @@ img {
     background: #273751;
 }
 .red-bg {
-    background: #FE5D89;
+    background: #5C3A87;
 }
 .theme-bg{
-  background: #6563f7;
+  background: #A78EC7;
 }
 .white{ 
   color: #fff;
@@ -408,7 +408,7 @@ img {
   color: #fff;
   text-align: center;
   cursor: pointer;
-  background: #FE5D89;
+  background: #5C3A87;
   -webkit-animation: pulse 2s infinite;
   -o-animation: pulse 2s infinite;
   animation: pulse 2s infinite;

@@ -19,11 +19,11 @@
 }
 
 .bg-grad {
-    background: linear-gradient(92deg, #FE5D89 0%, #686EE4 100%);
+    background: linear-gradient(92deg, #5C3A87 0%, #A78EC7 100%);
 }
 
 .bg-bllue {
-    background: #6563F7;
+    background: #A78EC7;
 }
 
 .bg-transpar {
@@ -36,12 +36,12 @@
 }
 
 .header-light .sup-log .support {
-    background: #6563F7;
+    background: #A78EC7;
     color: #FFFFFF;
 }
 
 .header-light .sup-log .login:hover {
-    background: #6563F7;
+    background: #A78EC7;
     color: #FFFFFF;
 }
 
@@ -153,7 +153,7 @@
 
 
 .main-menu .navigation > li > ul > li > a:hover {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 
 .main-menu .navigation > li > ul > li ul {
@@ -288,13 +288,13 @@
 
 .fixed-header .main-menu .navigation > li:hover > a,
 .fixed-header .main-menu .navigation > li.current > a {
-    border-bottom: 2px solid #686EE4;
-    color: #686EE4;
+    border-bottom: 2px solid #A78EC7;
+    color: #A78EC7;
 }
 
 .fixed-header .sup-log .login:hover,
 .fixed-header .sup-log .support {
-    background: #6563f7;
+    background: #A78EC7;
     color: #fff;
 }
 
@@ -593,26 +593,26 @@
 
 .sup-log .support {
     background: #fff;
-    color: #FE5D89;
+    color: #5C3A87;
     margin-left: 17px;
 }
 
 .sup-log .login {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
     margin-left: 13px;
 }
 
 .sup-log .support:hover {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
-    border: 1px solid #FE5D89;
-    border-bottom: 1px solid #FE5D89;
+    border: 1px solid #5C3A87;
+    border-bottom: 1px solid #5C3A87;
 }
 
 .sup-log .login:hover {
     background: #fff;
-    color: #FE5D89;
+    color: #5C3A87;
     border-bottom: 1px solid #fff;
 }
 
@@ -872,7 +872,7 @@
         .main-menu .navbar-collapse > .navigation > li.current > a,
         .main-menu .navbar-collapse > .navigation > li.current-menu-item > a {
             /* background:#F82462; */
-            color: #686EE4;
+            color: #A78EC7;
         }
 
         .main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn {

@@ -54,7 +54,7 @@
     background: #FF8AAC;
 }
 .color-btn5 {
-    background: #FE5D89;
+    background: #5C3A87;
 }
 .color-btn6 {
     background: #6B62ED;
@@ -165,7 +165,7 @@
 }
 .size-btn {
     color: #fff;
-    background: #FE5D89;
+    background: #5C3A87;
     border-radius: 4px;
     display: inline-block;
     text-align: center;
@@ -354,7 +354,7 @@
 
 .shadow-btn2 {
 	color: #fff;
-	background: #FE5D89;
+	background: #5C3A87;
 	box-shadow: 20px 25px 27px rgba(110, 113, 178, 0.11);
 }
 
@@ -815,7 +815,7 @@
     background: #0090FF;
 }
 .single-box.pricing.active{
-    background: #FE5D89;
+    background: #5C3A87;
 }
 .single-box.support.active{
     background: #68C95A;
@@ -840,7 +840,7 @@
     color: #0090FF;
 }
 #pricing .accordion .accord-btn.active h5 {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 #support .accordion .accord-btn.active h5 {
     color: #68C95A;
@@ -875,7 +875,7 @@
     color: #0090FF;
 }
 .faq-title i.flaticon-ui {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 .faq-title i.flaticon-puzzle {
     color: #68C95A;
@@ -1048,7 +1048,7 @@
     transition: .5s;
 }
 .pricing-table-box .choose-button:hover {
-    background-color: #FE5D89;
+    background-color: #5C3A87;
 }
 .pricing-table-section-two .shape-pt1 {
   position: absolute;
@@ -1206,7 +1206,7 @@
     transition: .5s;
 }
 .subscribe-form-five button:hover {
-    background-color: #FE5D89;
+    background-color: #5C3A87;
 }
 
 /*====================================================================
@@ -1228,7 +1228,7 @@
     color: #727B9A;
 }
 .text-color-element .text-color-two {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 .text-color-element .text-color-three {
     color: #6B62ED;
@@ -1264,7 +1264,7 @@
     background-color: #15CE73;
 }
 .bg-color-element .bg-color-four {
-    background-color: #FE5D89;
+    background-color: #5C3A87;
 }
 .bg-color-element .bg-color-five {
     background-color: #6B62ED;
@@ -1298,7 +1298,7 @@
     margin-bottom: 0;
 }
 .list-style-three .skill-item i {
-    background: #686EE4;
+    background: #A78EC7;
     color: #fff;
 }
 .list-style-four .skill-item {
@@ -1415,11 +1415,11 @@
 
 .dot-alert-error:before,
 .dot-alert-error:after{
-    background: #FE5D89;
+    background: #5C3A87;
 
 }
 .dot-alert-error button.close {
-  color: #FE5D89;
+  color: #5C3A87;
 
 }
 
@@ -1484,7 +1484,7 @@
     background: #FFC021;
 }
 .icon-alert-error .alert-icon {
-    background: #FE5D89;
+    background: #5C3A87;
 
 }
 
@@ -1524,7 +1524,7 @@
 
 .box-alert-error .alert-icon {
     background: #FFE9EB;
-    color: #FE5D89;
+    color: #5C3A87;
 }
 .box-alert-access-control .alert-icon {
     background: #F1EEFC;
@@ -1641,7 +1641,7 @@
     margin-bottom: 0px;
 }
 .testi-content-wrap-two .testi-title-two h3 {
-    color: #FE5D89;
+    color: #5C3A87;
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -1752,7 +1752,7 @@ div#testimonial-active-ow button {
     margin: 20px 0;
 }
 .tooltip-position-style a {
-  color: #FE5D89;
+  color: #5C3A87;
 }
 
 
@@ -1792,7 +1792,7 @@ div#testimonial-active-ow button {
 }
 
 .tooltip-paragrap-style a {
-  color: #FE5D89;
+  color: #5C3A87;
 }
 
 
@@ -1815,12 +1815,12 @@ div#testimonial-active-ow button {
     color: #243E63;
 }
 .pagination-style-one li a:hover {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 
 .pagination-style-one li.first a,
 .pagination-style-one li.last a {
-    color: #FE5D89;
+    color: #5C3A87;
     transition: .5s;
     opacity: .5;
 }
@@ -1832,7 +1832,7 @@ div#testimonial-active-ow button {
 }
 
 .pagination-style-one li.active a {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 
 .pagination-style-two a {
@@ -1842,13 +1842,13 @@ div#testimonial-active-ow button {
     transition: 0.4s;
 }
 .pagination-style-two a:hover {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 .pagination-style-two a span {
     font-size: 25px;
     display: inline-block;
     vertical-align: -3px;
-    color: #FE5D89;
+    color: #5C3A87;
     margin: 0 10px;
 }
 
@@ -1881,7 +1881,7 @@ div#testimonial-active-ow button {
     margin-bottom: 110px;
 }
 .funfact-two .section-title h3 {
-    color: #FE5D89;
+    color: #5C3A87;
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -2023,7 +2023,7 @@ div#testimonial-active-ow button {
   background: #FF8AAC;
 }
 .custom-color-badge-five{
-  background: #FE5D89;
+  background: #5C3A87;
 }
 .custom-color-badge-six{
   background: #6B62ED;
@@ -2530,7 +2530,7 @@ li:last-child .tab-two-btn {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     margin: 0px auto;
-    background: #FE5D89;
+    background: #5C3A87;
     line-height: 60px;
 }
 
@@ -2948,7 +2948,7 @@ li:last-child .tab-two-btn {
 .progress-bar1 .skillbar-bar {
   height: 100%;
   width: 0px;
-  background: #6563F7;
+  background: #A78EC7;
   display: inline-block;
   margin-bottom:0;
   border-radius: 4px 0 0 4px;
@@ -2961,7 +2961,7 @@ li:last-child .tab-two-btn {
     top: -38px;
     color: #fff;
     font-size: 12px;
-    background: #FE5D89;
+    background: #5C3A87;
     padding: 0px 7px;
     border-radius: 4px;
     z-index: 99;
@@ -2974,7 +2974,7 @@ li:last-child .tab-two-btn {
     content: "";
     width: 0px;
     height: 0px;
-    border-top: solid 10px #FE5D89;
+    border-top: solid 10px #5C3A87;
     border-left: solid 5px transparent;
     border-right: solid 5px transparent;
 }
@@ -3003,7 +3003,7 @@ li:last-child .tab-two-btn {
 .progress-bar2 .skillbar-bar {
   height: 100%;
   width: 0px;
-  background: #6563F7;
+  background: #A78EC7;
   display: inline-block;
   margin-bottom:0;
   border-radius: 20px 0 0 20px;
@@ -3016,7 +3016,7 @@ li:last-child .tab-two-btn {
     top: -38px;
     color: #fff;
     font-size: 12px;
-    background: #FE5D89;
+    background: #5C3A87;
     padding: 0px 7px;
     border-radius: 4px;
     z-index: 99;
@@ -3028,7 +3028,7 @@ li:last-child .tab-two-btn {
     content: "";
     width: 10px;
     height: 10px;
-    border-top: solid 10px #FE5D89;
+    border-top: solid 10px #5C3A87;
     border-left: solid 5px transparent;
     border-right: solid 5px transparent;
 }
@@ -3055,7 +3055,7 @@ li:last-child .tab-two-btn {
 .progress-bar3 .skillbar-bar {
   height: 100%;
   width: 0px;
-  background: #6563F7;
+  background: #A78EC7;
   display: inline-block;
   margin-bottom:0;
   border-radius: 20px 0 0 20px;

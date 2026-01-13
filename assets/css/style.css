@@ -63,7 +63,7 @@ Footer Section
 }
 
 .hero-section.bg-img {
-    background-color: #F6F8FA;
+    background-color: #FFF9F2;
     background-position: bottom center;
     background-size: cover;
 }
@@ -113,7 +113,7 @@ Footer Section
 
 .banner-section {
     background-image: url(../img/bg/banner-bg.png);
-    background-color: #F6F8FA;
+    background-color: #FFF9F2;
     background-position: bottom center;
     background-size: cover;
 }
@@ -337,7 +337,7 @@ Footer Section
     line-height: 22px;
     font-size: 12px;
     font-weight: normal;
-    background: #686EE4;
+    background: #A78EC7;
     border-radius: 50%;
     text-align: center;
     color: #fff;
@@ -426,7 +426,7 @@ Footer Section
     position: absolute;
     margin: 14px 11px;
     border-radius: 50%;
-    color: #686EE4;
+    color: #A78EC7;
 }
 
 .skill-item i::before {
@@ -541,7 +541,7 @@ Footer Section
 
 .featured-item .hover {
     background-image: url(../img/feature/featured-bg.png);
-    background-color: #686EE4;
+    background-color: #A78EC7;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -726,7 +726,7 @@ Footer Section
     width: 40px;
     height: 40px;
     content: "";
-    background: #FE5D89;
+    background: #5C3A87;
     border-radius: 50%;
     z-index: 99;
     -webkit-transition: .5s;
@@ -799,7 +799,7 @@ Footer Section
 
 .team-social-link a:hover {
     color: #fff;
-    background: #FE5D89;
+    background: #5C3A87;
 }
 
 .team-slider .owl-dots {
@@ -972,7 +972,7 @@ Footer Section
     position: absolute;
     right: 0;
     padding: 0 15px;
-    background: #FE5D89;
+    background: #5C3A87;
     top: 0;
     cursor: pointer;
     color: #fff;
@@ -1018,7 +1018,7 @@ Footer Section
 
 .portfolio-menu button.active,
 .portfolio-menu button:hover {
-    color: #686EE4;
+    color: #A78EC7;
 }
 
 .single-portfolio-item {
@@ -1060,7 +1060,7 @@ Footer Section
     left: 0;
     width: 100%;
     height: 100%;
-    background: #FE5D89;
+    background: #5C3A87;
     opacity: 0;
     -webkit-transition: .7s;
     -o-transition: .7s;
@@ -1199,7 +1199,7 @@ Footer Section
     font-size: 18px;
     color: #ffffff;
     font-weight: 600;
-    background-color: #FE5D89;
+    background-color: #5C3A87;
     -webkit-transition: .7s;
     -o-transition: .7s;
     transition: .7s;
@@ -1245,7 +1245,7 @@ Footer Section
     background-color: #fff;
     -webkit-box-shadow: 0 15px 40px rgba(8, 18, 109, .10);
     box-shadow: 0 15px 40px rgba(8, 18, 109, .10);
-    color: #FE5D89;
+    color: #5C3A87;
 }
 
 
@@ -1314,7 +1314,7 @@ Footer Section
 
 .testimonial-block .testi-content-wrap::before {
     content: '\201C';
-    color: #FE5D89;
+    color: #5C3A87;
     position: absolute;
     top: -25px;
     left: 0;
@@ -1371,7 +1371,7 @@ Footer Section
     line-height: 46px;
     text-align: center;
     font-size: 20px;
-    color: #FE5D89;
+    color: #5C3A87;
     transition: .5s;
     opacity: .5;
 }
@@ -1592,7 +1592,7 @@ Footer Section
     content: "";
     width: 106px;
     height: 4px;
-    background: #FE5D89;
+    background: #5C3A87;
 }
 
 .single-blog-post-date a {
@@ -1617,7 +1617,7 @@ Footer Section
 .post-love i {
     margin-right: 5px;
     margin-left: 10px;
-    color: #FE5D89;
+    color: #5C3A87;
 }
 
 
@@ -1850,9 +1850,9 @@ Footer Section
 }
 
 .comment-submit-btn {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
-    border: 1px solid #FE5D89;
+    border: 1px solid #5C3A87;
 }
 /*post-comments-form*/
 
@@ -1947,7 +1947,7 @@ Footer Section
 }
 
 .news-tags ul li a:hover {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #ffffff;
 }
 
@@ -2361,7 +2361,7 @@ form.login-form .password-field {
     background-color: #5578EB;
 }
 .share-btn-wrap .google-btn a {
-    background-color: #FE5D89;
+    background-color: #5C3A87;
 }
 .share-btn-wrap a span {
     margin-left: 5px;
@@ -2461,8 +2461,8 @@ a.signup-link {
     cursor: pointer;
     transition: 0.4s;
     border-radius: 4px;
-    background: #FE5D89;
-    border: 0.7px solid #FE5D89;
+    background: #5C3A87;
+    border: 0.7px solid #5C3A87;
 }
 .search-field button i {
     margin-right: 5px;
@@ -2692,7 +2692,7 @@ a.signup-link {
     margin-bottom: 10px;
 }
 .categorie-title i {
-    color: #FE5D89;
+    color: #5C3A87;
     margin-right: 15px;
     margin-left: -5px;
 }
@@ -2727,12 +2727,12 @@ a.signup-link {
 }
 .product-search button {
     width: 20%;
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
     border-radius: 4px;
     transition: 0.4s;
     height: 55px;
-    border: 0.7px solid #FE5D89;
+    border: 0.7px solid #5C3A87;
 }
 .product-search button i {
     margin-right: 5px;
@@ -2825,7 +2825,7 @@ a.signup-link {
     visibility: visible;
 }
 .ratting span {
-    color: #FE5D89;
+    color: #5C3A87;
     font-weight: 500;
 }
 .cart-btn {
@@ -2838,7 +2838,7 @@ a.signup-link {
 }
 .cart-btn a {
     color: #fff;
-    background: #FE5D89;
+    background: #5C3A87;
     padding: 5px 12px;
     border-radius: 4px;
 }
@@ -2959,7 +2959,7 @@ a.signup-link {
   padding-right: 1px;
 }
 .review-box ul li i {
-  color: #FE5D89;
+  color: #5C3A87;
   font-size: 12px;
 }
 .review-box ul li i.fa-star-o {
@@ -3123,10 +3123,10 @@ a.signup-link {
     height: 100%;
     cursor: pointer;
     text-align: center;
-    background: #FE5D89;
+    background: #5C3A87;
 }
 .coming-soon .subscribe button:hover {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
 }
 
@@ -3235,7 +3235,7 @@ a.signup-link {
     font-weight: 500;
 }
 .cs-details-list li i {
-    background: #686EE4;
+    background: #A78EC7;
     color: #fff;
     width: 22px;
     height: 22px;
@@ -3349,7 +3349,7 @@ a.signup-link {
 .nice-select .option:hover, 
 .nice-select .option.focus, 
 .nice-select .option.selected.focus {
-    background-color: #F6F8FA;
+    background-color: #FFF9F2;
 }
 .nice-select:active, 
 .nice-select.open, 
@@ -3420,7 +3420,7 @@ a.signup-link {
     background: #fff;
 }
 .wc-checkout-review-order .order-item.total .product {
-    color: #FE5D89;
+    color: #5C3A87;
 }
 .wc-checkout-review-order .order-item.total .price {
     color: #6B62ED;
@@ -3601,7 +3601,7 @@ input[type=number]::-webkit-outer-spin-button {
     transition: 0.4s;
 }
 .discount-wrapper .coupon button:hover {
-    background: #FE5D89;
+    background: #5C3A87;
 }
 
 /* right */
@@ -3612,7 +3612,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 25px;
 }
 .update-shopping .btn-bg:hover {
-    background: #FE5D89;
+    background: #5C3A87;
     color: #fff;
 }
 
@@ -6070,7 +6070,7 @@ body.hp-six {
     position: absolute;
     margin: 14px 11px;
     border-radius: 50%;
-    color: #686EE4;
+    color: #A78EC7;
 }
 
 .symptom-item i::before {
@@ -6150,7 +6150,7 @@ body.hp-six {
 
 .prevention-item .hover {
     background-image: url(../img/feature/featured-bg.png);
-    background-color: #686EE4;
+    background-color: #A78EC7;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
