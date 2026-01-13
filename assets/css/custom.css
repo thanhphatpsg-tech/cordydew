@@ -1,0 +1,73 @@
+.hero-text .btn + .btn{
+  margin-left: 12px;
+}
+
+.hero-text{
+  color: #4b1b3b;
+}
+
+.hero-title{
+  margin: 0 0 14px;
+  line-height: 1;
+}
+
+.hero-title .brand{
+  display: block;
+  font-size: 64px;             
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #4b1b3b;
+  font-family: "Cooper Black", "Baloo 2", "Georgia", serif; 
+}
+
+.hero-title .slogan{
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(75, 27, 59, .85);
+}
+
+.hero-subtitle{
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #5a2346;
+  font-family: "Montserrat", "Segoe UI", system-ui, sans-serif;
+}
+
+.hero-desc{
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(75, 27, 59, .85);
+}
+.hero-text .btn{
+ border: 1px solid #4b1b3b !important;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.hero-text .btn:not(.btn-outline){
+  background: #4b1b3b;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(75, 27, 59, .18);
+}
+
+.hero-text .btn.btn-outline{
+  background: #ffe7b6;
+  color: #4b1b3b;
+  border: 1px solid rgba(75, 27, 59, .18);
+  box-shadow: none;
+}
+
+.hero-text-box{
+  background: #9b82b8;           
+  border-radius: 0 0 40px 40px;    
+  padding: 28px 32px;
+}
