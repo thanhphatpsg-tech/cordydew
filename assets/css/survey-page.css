@@ -1,12 +1,7 @@
 /* =========================
    Survey Page (Scoped)
 ========================= */
-.survey-page{
-  background:
-    radial-gradient(1100px 600px at 15% 20%, rgba(236, 72, 153, .10), transparent 55%),
-    radial-gradient(900px 500px at 85% 30%, rgba(124, 58, 237, .10), transparent 55%),
-    linear-gradient(180deg, rgba(255,255,255,1), rgba(250,250,255,1));
-}
+
 
 .survey-card{
   background: #fff;
@@ -221,4 +216,19 @@
   .survey-grid{ grid-template-columns: 1fr; }
   .survey-actions{ flex-direction:column; }
   .survey-btn{ width: 100%; justify-content:center; }
+}
+/* Section header inside survey */
+.survey-section{
+  margin: 18px 0 8px;
+  padding-top: 8px;
+}
+.survey-section-title{
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(124,58,237,.08);
+  border: 1px solid rgba(124,58,237,.14);
 }
