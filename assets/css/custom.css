@@ -1246,3 +1246,372 @@
   font-weight: 750;
   opacity: .92;
 }
+
+
+/* =========================
+   CordyDew VMV (beautified)
+========================= */
+.cd-vmv2 {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(900px 520px at 12% 16%, rgba(236, 72, 153, .10), transparent 55%),
+    radial-gradient(900px 520px at 88% 24%, rgba(124, 58, 237, .10), transparent 55%),
+    linear-gradient(180deg, #ffffff, #fafbff);
+}
+
+.cd-vmv2-top {
+  max-width: 920px;
+  margin: 0 auto 34px;
+}
+
+.cd-vmv2-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #5b21b6;
+  background: rgba(124, 58, 237, .12);
+  border: 1px solid rgba(124, 58, 237, .18);
+}
+
+.cd-vmv2-quote {
+  margin: 14px 0 10px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-size: 28px;
+  line-height: 1.25;
+  /* color: #0f172a; */
+}
+
+.cd-vmv2-sub {
+  margin: 0 auto;
+  max-width: 860px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(15, 23, 42, .82);
+}
+
+/* Vision / Mission cards */
+.cd-vmv2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.cd-vmv2-card {
+  position: relative;
+  padding: 22px 22px 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .06);
+  backdrop-filter: blur(6px);
+  transition: .25s ease;
+}
+
+.cd-vmv2-card:hover {
+  transform: translateY(-6px);
+}
+
+.cd-vmv2-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cd-vmv2-icon {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(124, 58, 237, .10);
+  border: 1px solid rgba(124, 58, 237, .18);
+  font-size: 18px;
+}
+
+.cd-vmv2-title {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.cd-vmv2-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(15, 23, 42, .88);
+}
+
+/* Core values */
+.cd-vmv2-values {
+  margin-top: 34px;
+  padding: 22px 22px 26px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .72);
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .06);
+  backdrop-filter: blur(6px);
+}
+
+.cd-vmv2-values-head {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cd-vmv2-values-head h3 {
+  margin: 0 0 6px;
+  font-weight: 950;
+  font-size: 22px;
+}
+
+.cd-vmv2-values-head p {
+  margin: 0;
+  color: rgba(15, 23, 42, .75);
+  line-height: 1.7;
+}
+
+.cd-vmv2-chips {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.cd-chip {
+  padding: 14px 14px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .90);
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, .06);
+  transition: .25s ease;
+}
+
+.cd-chip:hover {
+  transform: translateY(-4px);
+}
+
+.cd-chip-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cd-chip-ico {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(236, 72, 153, .10);
+  border: 1px solid rgba(236, 72, 153, .18);
+  font-size: 16px;
+}
+
+.cd-chip-desc {
+  display: block;
+  color: rgba(15, 23, 42, .78);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-vmv2-quote {
+    font-size: 24px;
+  }
+
+  .cd-vmv2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-vmv2-chips {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .cd-vmv2-chips {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   CordyDew Team (owl cards)
+========================= */
+.cd-team .cd-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #5b21b6;
+  background: rgba(124, 58, 237, .12);
+  border: 1px solid rgba(124, 58, 237, .18);
+  margin-bottom: 10px;
+}
+
+/* Card */
+.cd-team .cd-member {
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .06);
+  transition: .25s ease;
+  min-height: 445px;
+}
+
+.cd-team .cd-member:hover {
+  transform: translateY(-6px);
+}
+
+/* Thumb (placeholder background) */
+.cd-team .cd-thumb {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* overlay mềm */
+.cd-team .cd-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Info */
+.cd-team .team-info {
+  padding: 18px 18px 20px;
+}
+
+.cd-team .team-info h5 {
+  margin: 10px 0 6px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.cd-team .team-info h6 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: rgba(15, 23, 42, .70);
+  font-size: 14px;
+}
+
+.cd-team .cd-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cd-team .cd-meta li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: rgba(15, 23, 42, .82);
+  font-size: 14px;
+}
+
+.cd-team .cd-meta li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(124, 58, 237, .85);
+}
+
+/* Tag */
+.cd-team .cd-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  border: 1px solid rgba(15, 23, 42, .08);
+  background: rgba(15, 23, 42, .03);
+  color: rgba(15, 23, 42, .85);
+}
+
+.cd-team .cd-tag--expert {
+  background: rgba(236, 72, 153, .10);
+  border-color: rgba(236, 72, 153, .18);
+  color: #9d174d;
+}
+
+.cd-team .cd-tag--market {
+  background: rgba(34, 197, 94, .10);
+  border-color: rgba(34, 197, 94, .18);
+  color: #166534;
+}
+
+.cd-team .cd-tag--rnd {
+  background: rgba(124, 58, 237, .10);
+  border-color: rgba(124, 58, 237, .18);
+  color: #5b21b6;
+}
+
+.cd-team .cd-tag--biz {
+  background: rgba(59, 130, 246, .10);
+  border-color: rgba(59, 130, 246, .18);
+  color: #1d4ed8;
+}
+
+.cd-team .cd-tag--mkt {
+  background: rgba(245, 158, 11, .12);
+  border-color: rgba(245, 158, 11, .22);
+  color: #92400e;
+}
+
+.cd-team .cd-tag--sales {
+  background: rgba(20, 184, 166, .10);
+  border-color: rgba(20, 184, 166, .18);
+  color: #115e59;
+}
+
+.cd-team .cd-tag--digital {
+  background: rgba(99, 102, 241, .10);
+  border-color: rgba(99, 102, 241, .18);
+  color: #3730a3;
+}
+
+/* Thumb background placeholders (đổi ảnh thật sau) */
+.cd-team .thumb-luan {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-dieu {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-thao {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-ngoc {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-giang {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-huy {
+  background-image: url(../img/home-seven/team-1.png)
+}
+
+.cd-team .thumb-phat {
+  background-image: url(../img/home-seven/team-1.png)
+}
