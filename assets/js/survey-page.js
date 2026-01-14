@@ -205,3 +205,74 @@
     // init
     updateProgress();
 })();
+
+
+//============================================
+
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzOijOBz9Mb7zrJbqFz-m4oxCUmjCpT-6f85zxWtEMfsch8Z3Qju-GpXUDzjQN-xexK/exec";
+function formToJSON(form) {
+  const fd = new FormData(form);
+  const obj = {};
+
+  for (const [key, value] of fd.entries()) {
+    // checkbox name kiểu c1_time[] sẽ ra key "c1_time[]"
+    const cleanKey = key.endsWith("[]") ? key.slice(0, -2) : key;
+
+    if (obj[cleanKey] !== undefined) {
+      if (!Array.isArray(obj[cleanKey])) obj[cleanKey] = [obj[cleanKey]];
+      obj[cleanKey].push(value);
+    } else {
+      obj[cleanKey] = value;
+    }
+  }
+
+  // Nếu dùng input "Khác" (a_job_other) mà a_job != other -> có thể xóa
+  if (obj.a_job !== "other") delete obj.a_job_other;
+
+  return obj;
+}
+
+document.getElementById("surveyForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+
+  // TODO: nếu bạn đã có validate hiện tại thì giữ nguyên, chỉ cần đảm bảo pass mới gửi
+  // if (!validateSurvey(form)) return;
+
+  const payload = formToJSON(form);
+
+  const btn = document.getElementById("surveySubmitBtn");
+  const oldText = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = "Đang gửi...";
+
+  try {
+    const res = await fetch(SHEETS_WEBAPP_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload),
+    });
+
+    const json = await res.json();
+
+    if (!json.ok) throw new Error(json.error || "Submit failed");
+
+    // UI success (bạn có sẵn surveyResult)
+    const resultBox = document.getElementById("surveyResult");
+    const desc = document.getElementById("surveyResultDesc");
+    const pre = document.getElementById("surveyJson");
+
+    desc.textContent = "Bọn mình đã nhận được phản hồi của bạn. Cảm ơn bạn nhiều!";
+    pre.textContent = JSON.stringify(payload, null, 2);
+    resultBox.style.display = "block";
+
+    form.reset();
+    // TODO: nếu bạn có progress reset -> gọi lại hàm updateProgress()
+  } catch (err) {
+    alert("Gửi thất bại: " + err.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = oldText;
+  }
+});
