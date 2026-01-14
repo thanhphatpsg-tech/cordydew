@@ -187,8 +187,8 @@
         resultDesc.textContent = msg;
 
         // Show JSON (simulate submit)
-        jsonBox.textContent = JSON.stringify(data, null, 2);
-        resultBox.style.display = 'block';
+        // jsonBox.textContent = JSON.stringify(data, null, 2);
+        // resultBox.style.display = 'block';
 
         // Optional: fake API call
         // fetch('/api/survey', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)})
