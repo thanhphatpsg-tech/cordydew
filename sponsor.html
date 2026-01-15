@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets\css\style.css">
     <link rel="stylesheet" href="assets\css\responsive.css">
-    <link rel="stylesheet" href="assets\css\contact-cordydew.css">
+    <link rel="stylesheet" href="assets\css\sponsor-page.css">
 
 </head>
 
@@ -65,10 +65,11 @@
                                     </li>
                                     <li class="dropdown"><a href="survey.html">Khảo sát</a></li>
                                     <li class="dropdown"><a href="about.html">Về chúng tôi</a>
+
                                     </li>
-                                    <li class="current"><a href="contact.html">Liên hệ</a>
+                                    <li class="dropdown"><a href="contact.html">Liên hệ</a>
                                     </li>
-                                    <li class="dropdown"><a href="sponsor.html">Nhà tài trợ</a>
+                                    <li class="current"><a href="sponsor.html">Nhà tài trợ</a>
                                     </li>
                                     <!-- <li class="dropdown"><a href="#">Pages</a>
 
@@ -104,10 +105,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="page-title text-center">
-                            <h1>Liên hệ</h1>
-                            <p class="cd-page-sub text-white">Kết nối với CordyDew — chúng mình phản hồi nhanh trong giờ
-                                hành
-                                chính.</p>
+                            <h1>Nhà tài trợ</h1>
+                            <p class="sp-subtitle text-white">Tri ân & giới thiệu sản phẩm từ đối tác đồng hành cùng
+                                CordyDew</p>
                         </div>
                     </div>
                 </div>
@@ -117,187 +117,134 @@
                             end breadcumb section
     =====================================================================-->
 
-        <!--==================================================================== 
-                    Start Contact - CordyDew
-=====================================================================-->
-        <section class="cd-contact another-page pb-90">
+        <!-- Sponsor intro -->
+        <section class="sp-intro pt-95 pb-70">
             <div class="container">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 text-center mb-45">
-                        <div class="section-title">
-                            <h2>Gửi tin nhắn cho chúng mình</h2>
-                            <p>
-                                Nếu bạn cần tư vấn sản phẩm, hợp tác truyền thông, hoặc góp ý trải nghiệm CordyDew — hãy
-                                để lại thông tin,
-                                tụi mình sẽ liên hệ sớm.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-stretch">
-                    <!-- Form -->
+                <div class="row align-items-center">
                     <div class="col-lg-7 mb-30">
-                        <div class="cd-contact-card cd-form-card">
-                            <div class="cd-card-head">
-                                <div class="cd-icon"><i class="fa fa-paper-plane"></i></div>
-                                <div>
-                                    <h4 class="mb-5">Liên hệ nhanh</h4>
-                                    <p class="mb-0">Điền form bên dưới, CordyDew sẽ phản hồi qua email/điện thoại.</p>
+                        <div class="sp-card sp-soft">
+                            <span class="sp-badge">Đối tác đồng hành</span>
+
+                            <!-- CHANGE: sponsor name -->
+                            <h2 class="sp-title">Nhà tài trợ: <span class="sp-brand">CÔNG TY TNHH NÔNG NGHIỆP
+                                    VACO</span></h2>
+
+                            <p class="mb-10">
+                                CordyDew trân trọng sự đồng hành của nhà tài trợ trong hành trình đổi mới sáng tạo.
+                                Sự hỗ trợ này giúp chúng tôi hoàn thiện sản phẩm, tăng chất lượng trải nghiệm và mở rộng
+                                hoạt động nghiên cứu.
+                            </p>
+
+                            <div class="sp-highlights mt-20">
+                                <div class="sp-hi">
+                                    <div class="sp-ic"><i class="fa fa-handshake-o"></i></div>
+                                    <div>
+                                        <h6>Hợp tác bền vững</h6>
+                                        <p>Đồng hành cùng tinh thần đổi mới, hướng tới giá trị cộng đồng.</p>
+                                    </div>
+                                </div>
+                                <div class="sp-hi">
+                                    <div class="sp-ic"><i class="fa fa-line-chart"></i></div>
+                                    <div>
+                                        <h6>Gia tăng tác động</h6>
+                                        <p>Hỗ trợ phát triển thử nghiệm – truyền thông – kết nối nguồn lực.</p>
+                                    </div>
+                                </div>
+                                <div class="sp-hi">
+                                    <div class="sp-ic"><i class="fa fa-star"></i></div>
+                                    <div>
+                                        <h6>Đồng thương hiệu</h6>
+                                        <p>Xuất hiện trên landing page và các hoạt động truyền thông phù hợp.</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <form method="POST" action="sendmail.php" id="contact-form" class="cd-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Họ và tên</label>
-                                            <input type="text" name="username" placeholder="Ví dụ: Nguyễn Văn A"
-                                                required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="email" placeholder="example@email.com"
-                                                required="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Số điện thoại (tuỳ chọn)</label>
-                                            <input type="text" name="phone" placeholder="09xx xxx xxx">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Chủ đề</label>
-                                            <select name="subject">
-                                                <option value="Tu van">Tư vấn sản phẩm</option>
-                                                <option value="Hop tac">Hợp tác / Truyền thông</option>
-                                                <option value="Gop y">Góp ý trải nghiệm</option>
-                                                <option value="Khac">Khác</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Nội dung</label>
-                                            <textarea name="message" rows="5"
-                                                placeholder="Bạn cần CordyDew hỗ trợ gì?"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="checking cd-check">
-                                            <input type="checkbox" name="check" id="check" value="" required="">
-                                            <label for="check">
-                                                Tôi đồng ý với <a href="#" onclick="return false;">Điều khoản</a> và
-                                                <a href="#" onclick="return false;">Chính sách bảo mật</a>.
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <input id="form_botcheck" name="form_botcheck" class="form-control"
-                                            type="hidden" value="">
-                                        <button class="btn-bg cd-btn" type="submit" data-loading-text="Please wait...">
-                                            GỬI TIN NHẮN <i class="fa fa-arrow-right"></i>
-                                        </button>
-                                        <div class="cd-hint">* Thời gian phản hồi dự kiến: 24–48h (giờ hành chính).
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            <div class="sp-cta mt-25">
+                                <a href="contact.html" class="btn-bg sp-btn">Liên hệ hợp tác <i
+                                        class="fa fa-arrow-right"></i></a>
+                                <a href="#sponsor-products" class="sp-link">Xem sản phẩm nhà tài trợ</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Right column: Info + Map -->
                     <div class="col-lg-5 mb-30">
-                        <div class="cd-contact-card cd-info-card mb-20">
-                            <div class="cd-card-head">
-                                <div class="cd-icon"><i class="fa fa-comments"></i></div>
-                                <div>
-                                    <h4 class="mb-5">Kênh liên hệ</h4>
-                                    <p class="mb-0">Liên hệ qua các kênh bên dưới.</p>
-                                </div>
-                            </div>
-
-                            <div class="cd-info-list">
-                                <div class="cd-info-item">
-                                    <div class="cd-mini-ic"><i class="fa fa-map-marker"></i></div>
-                                    <div>
-                                        <div class="cd-info-title">Địa chỉ</div>
-                                        <div class="cd-info-text">HUIT, TP. HCM</div>
-                                    </div>
-                                </div>
-
-                                <div class="cd-info-item">
-                                    <div class="cd-mini-ic"><i class="fa fa-phone"></i></div>
-                                    <div>
-                                        <div class="cd-info-title">Hotline</div>
-                                        <div class="cd-info-text">
-                                            <a href="tel:+84900000000">+84 900 000 000</a> <span class="cd-dot">•</span>
-                                            <a href="tel:+84911111111">+84 911 111 111</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="cd-info-item">
-                                    <div class="cd-mini-ic"><i class="fa fa-envelope"></i></div>
-                                    <div>
-                                        <div class="cd-info-title">Email</div>
-                                        <div class="cd-info-text">
-                                            <a href="mailto:hello@cordydew.vn">hello@cordydew.vn</a> <span
-                                                class="cd-dot">•</span>
-                                            <a href="mailto:collab@cordydew.vn">collab@cordydew.vn</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="cd-info-item">
-                                    <div class="cd-mini-ic"><i class="fa fa-clock-o"></i></div>
-                                    <div>
-                                        <div class="cd-info-title">Giờ làm việc</div>
-                                        <div class="cd-info-text">Thứ 2 – Thứ 6: 08:30 – 17:30</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="cd-social">
-                                <a href="#" onclick="return false;" aria-label="Facebook"><i
-                                        class="fa fa-facebook"></i></a>
-                                <a href="#" onclick="return false;" aria-label="Instagram"><i
-                                        class="fa fa-instagram"></i></a>
-                                <a href="#" onclick="return false;" aria-label="TikTok"><i class="fa fa-music"></i></a>
-                                <a href="#" onclick="return false;" aria-label="YouTube"><i
-                                        class="fa fa-youtube-play"></i></a>
-                            </div>
+                        <div class="sp-visual">
+                            <!-- CHANGE: sponsor logo / image -->
+                            <img src="assets/img/about/about-content.png" alt="Sponsor Visual">
+                            <div class="sp-blob"></div>
+                            <div class="sp-dots"></div>
                         </div>
 
+                        <div class="sp-mini mt-20">
+                            <div class="sp-mini-item">
+                                <h6>Hình thức tài trợ</h6>
+                                <p>Tài trợ chi phí/hiện vật/mentor chuyên môn/kênh phân phối.</p>
+                            </div>
+                            <div class="sp-mini-item">
+                                <h6>Cam kết minh bạch</h6>
+                                <p>Báo cáo tiến độ và cập nhật hoạt động sử dụng tài trợ theo kỳ.</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Products section -->
+        <section id="sponsor-products" class="sp-products pt-70 pb-90">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-40">
+                        <div class="section-title">
+                            <h2>Sản phẩm của nhà tài trợ</h2>
+                            <p>Danh sách sản phẩm hiển thị.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="cd-contact-card cd-map-card">
-                    <div class="cd-map">
-                        <!-- Thay link map theo địa chỉ bạn -->
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14709.912151828446!2d89.5403187!3d22.82179695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1564676262634!5m2!1sen!2sbd"
-                            style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Filter (optional) -->
+                <div class="row justify-content-center mb-25">
+                    <div class="col-lg-10">
+                        <div class="sp-toolbar">
+                            <div class="sp-search">
+                                <i class="fa fa-search"></i>
+                                <input id="spSearch" type="text" placeholder="Tìm sản phẩm theo tên...">
+                            </div>
+                            <!-- <select id="spSort" class="sp-sort">
+                                <option value="default">Sắp xếp: Mặc định</option>
+                                <option value="name_asc">Tên A → Z</option>
+                                <option value="name_desc">Tên Z → A</option>
+                                <option value="price_asc">Giá thấp → cao</option>
+                                <option value="price_desc">Giá cao → thấp</option>
+                            </select> -->
+                        </div>
                     </div>
-                    <div class="cd-map-bg"></div>
                 </div>
+
+                <!-- Grid -->
+                <div class="row" id="spProductGrid"></div>
 
             </div>
         </section>
-        <!--==================================================================== 
-                    End Contact - CordyDew
-=====================================================================-->
 
+        <!-- CTA bottom -->
+        <section class="sp-bottom-cta pt-70 pb-70">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="sp-cta-card">
+                            <div>
+                                <h3>Cùng CordyDew tạo ra tác động tích cực</h3>
+                                <p class="mb-0">Nếu bạn muốn đồng hành tài trợ/đối tác, hãy để lại thông tin — chúng tôi
+                                    sẽ liên hệ sớm.</p>
+                            </div>
+                            <a href="contact.html" class="btn-bg sp-btn">Gửi yêu cầu hợp tác <i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!--==================================================================== 
@@ -426,6 +373,7 @@
     <script src="assets\js\wow.min.js"></script>
     <script src="assets\js\isotope.pkgd.min.js"></script>
     <script src="assets\js\main.js"></script>
+    <script src="assets\js\sponsor-page.js"></script>
 
 </body>
 
