@@ -1,7 +1,7 @@
 
 
 (function ($) {
-"use strict";
+    "use strict";
 
 
     // Loading Box (Preloader)
@@ -101,16 +101,16 @@
             }
         });
     }
-    
+
 
     // single team member load more/ajax (team)
     if ($('.single-team-wrap').length) {
 
         $('.single-team-wrap').simpleLoadMore({
-          item: '.single-team-member',
-          count: 8,
-          itemsToLoad: 4,
-          btnHTML:'<div class="col-lg-12 text-center mt-20"><a href="#" class="btn-bg">LOAD MORE</a></div>'
+            item: '.single-team-member',
+            count: 8,
+            itemsToLoad: 4,
+            btnHTML: '<div class="col-lg-12 text-center mt-20"><a href="#" class="btn-bg">LOAD MORE</a></div>'
         });
 
     }
@@ -119,10 +119,10 @@
     if ($('.single-product-item-wrap').length) {
 
         $('.single-product-item-wrap').simpleLoadMore({
-          item: '.single-product-item',
-          count: 8,
-          itemsToLoad: 4,
-          btnHTML:'<div class="col-lg-12 text-center"><a href="#" class="btn-bg">LOAD MORE</a></div>'
+            item: '.single-product-item',
+            count: 8,
+            itemsToLoad: 4,
+            btnHTML: '<div class="col-lg-12 text-center"><a href="#" class="btn-bg">LOAD MORE</a></div>'
         });
 
     }
@@ -131,26 +131,26 @@
     if ($('.blog-grid-wrapper').length) {
 
         $('.blog-grid-wrapper').simpleLoadMore({
-          item: '.row',
-          count: 4,
-          itemsToLoad: 2,
-          btnHTML:'<div class="load-more-wrap text-center pt-45 pb-30"><a href="#" class="btn-bg">LOAD MORE</a></div>'
+            item: '.row',
+            count: 4,
+            itemsToLoad: 2,
+            btnHTML: '<div class="load-more-wrap text-center pt-45 pb-30"><a href="#" class="btn-bg">LOAD MORE</a></div>'
         });
 
     }
-    
+
     // shope grid page load more/ajax
     if ($('.case-study-section').length) {
 
         $('.case-study-section').simpleLoadMore({
-          item: '.single-case-study',
-          count: 6,
-          itemsToLoad: 3,
-          btnHTML:'<div class="col-lg-12 text-center pt-25 pb-30"><a href="#" class="btn-bg">LOAD MORE</a></div>'
+            item: '.single-case-study',
+            count: 6,
+            itemsToLoad: 3,
+            btnHTML: '<div class="col-lg-12 text-center pt-25 pb-30"><a href="#" class="btn-bg">LOAD MORE</a></div>'
         });
 
     }
-    
+
 
 
     /*========== Start Counter To Js funfact   ==========*/
@@ -195,7 +195,7 @@
 
 
     if ($('.hp4a-single-count').length) {
-        $('.hp4a-single-count').appear(function() {
+        $('.hp4a-single-count').appear(function () {
             var $t = $(this),
                 n = $t.find(".count-text").attr("data-stop"),
                 r = parseInt($t.find(".count-text").attr("data-speed"), 10);
@@ -208,21 +208,21 @@
                 }, {
                     duration: r,
                     easing: "linear",
-                    step: function() {
+                    step: function () {
                         $t.find(".count-text").text(Math.floor(this.countNum));
                     },
-                    complete: function() {
+                    complete: function () {
                         $t.find(".count-text").text(this.countNum);
                     }
                 });
             }
         });
     }
-    
 
-            
+
+
     /*========== Start Portfolio isotop Js ==========*/
- // isotop
+    // isotop
     // init Isotope
     var $grid = $('.custom-row').isotope({
         itemSelector: '.grid-item',
@@ -233,7 +233,7 @@
         }
     });
 
-    
+
     // filter items on button click
     $('.portfolio-menu').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
@@ -333,75 +333,75 @@
             }
         });
     }
-    
+
     // testimonial Carousel (testimonial one)
- 
-    
+
+
     // Cloud testimonial Carousel 
     if ($('.cloud-testimonial-inner').length) {
         $('.cloud-testimonial-inner').owlCarousel({
-            loop:true,
-            margin:0,
+            loop: true,
+            margin: 0,
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
             smartSpeed: 1000,
             autoplay: 5000,
             dots: true,
             nav: false,
-            responsive:{
-                0:{
-                    items:1
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:1
+                600: {
+                    items: 1
                 },
-                1200:{
-                    items:1
+                1200: {
+                    items: 1
                 }
             }
         });
     }
 
-    
-    
+
+
     //Stacked Con-Cloud Testimonial Carousel
-	if($('.stacked-testimonial-carousel').length){
-		function slideSwitch() {
-			var $active = $('.stacked-testimonial-carousel .slides .slide.active');
-			if ($active.length == 0) $active = $('.stacked-testimonial-carousel .slides .slide:last');
-			var $next =  $active.next().length ? $active.next() : $('.stacked-testimonial-carousel .slides .slide:first');
-			$('.stacked-testimonial-carousel .slides .slide').removeClass('active');
-			$next.addClass('active');
-		}
-		
-		var myVar = setInterval(function(){slideSwitch();},5000);
+    if ($('.stacked-testimonial-carousel').length) {
+        function slideSwitch() {
+            var $active = $('.stacked-testimonial-carousel .slides .slide.active');
+            if ($active.length == 0) $active = $('.stacked-testimonial-carousel .slides .slide:last');
+            var $next = $active.next().length ? $active.next() : $('.stacked-testimonial-carousel .slides .slide:first');
+            $('.stacked-testimonial-carousel .slides .slide').removeClass('active');
+            $next.addClass('active');
+        }
 
-		$('.stacked-testimonial-carousel .slides .slide').click(function() {
-			var current = $(this).attr('class','slide');
-			$('.stacked-testimonial-carousel .slides .slide').removeClass('active');
-			$(current).addClass('active');
-			clearInterval(myVar);
-			slideSwitch();
-		});
-	}
-	
+        var myVar = setInterval(function () { slideSwitch(); }, 5000);
 
-    
+        $('.stacked-testimonial-carousel .slides .slide').click(function () {
+            var current = $(this).attr('class', 'slide');
+            $('.stacked-testimonial-carousel .slides .slide').removeClass('active');
+            $(current).addClass('active');
+            clearInterval(myVar);
+            slideSwitch();
+        });
+    }
+
+
+
 
     //  start tiny-slider testimonial-area two
     if ($('.testimonial-area-two').length) {
 
         var slider = tns({
-          "container": "#testimonial-active",
-          "items": 1,
-          //"axis": "vertical",
-          "controlsContainer": "#testi-controls-two",
-          "navContainer": "#testi-thumbnails-two",
-          "navAsThumbnails": true,
-          "autoplay": true,
-          "autoplayTimeout": 3000,
-          "swipeAngle": false,
-          "speed": 1000
+            "container": "#testimonial-active",
+            "items": 1,
+            //"axis": "vertical",
+            "controlsContainer": "#testi-controls-two",
+            "navContainer": "#testi-thumbnails-two",
+            "navAsThumbnails": true,
+            "autoplay": true,
+            "autoplayTimeout": 3000,
+            "swipeAngle": false,
+            "speed": 1000
         });
     }
     //  end tiny-slider testimonial-area two
@@ -497,7 +497,7 @@
         });
     }
 
-    
+
     //home page four Customer Feedback carousel
     if ($('.hp4-cf-inner').length) {
         $('.hp4-cf-inner').owlCarousel({
@@ -543,169 +543,169 @@
     // shop page banner slider end
 
 
-//Jquery Spinner / Quantity Spinner
-/*
-    if($('.quantity-spinner').length){
-        $("input.quantity-spinner").TouchSpin({
-          verticalbuttons: true,
-          verticalupclass: 'fa fa-angle-up',
-          verticaldownclass: 'fa fa-angle-down'
-        });
-    }
-*/
-    
-            // Number Input Minus on Click
-        $(".minus").on('click', function () {
-            this.parentNode.querySelector('input[type=number]').stepDown();
-        });
+    //Jquery Spinner / Quantity Spinner
+    /*
+        if($('.quantity-spinner').length){
+            $("input.quantity-spinner").TouchSpin({
+              verticalbuttons: true,
+              verticalupclass: 'fa fa-angle-up',
+              verticaldownclass: 'fa fa-angle-down'
+            });
+        }
+    */
 
-        // Number Input Plus on Click
-        $(".plus").on('click', function () {
-            this.parentNode.querySelector('input[type=number]').stepUp();
-        });
+    // Number Input Minus on Click
+    $(".minus").on('click', function () {
+        this.parentNode.querySelector('input[type=number]').stepDown();
+    });
+
+    // Number Input Plus on Click
+    $(".plus").on('click', function () {
+        this.parentNode.querySelector('input[type=number]').stepUp();
+    });
 
 
 
 
 
     //Accordion Box start
-    if($('.accordion-box-one').length){
-        $(".accordion-box-one").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-box-one .accord-btn').removeClass('active');
-            
+    if ($('.accordion-box-one').length) {
+        $(".accordion-box-one").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-box-one .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-box-one .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box start
-    if($('.accordion-box-two').length){
-        $(".accordion-box-two").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-box-two .accord-btn').removeClass('active');
-            
+    if ($('.accordion-box-two').length) {
+        $(".accordion-box-two").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-box-two .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-box-two .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box start
-    if($('.accordion-three-white').length){
-        $(".accordion-three-white").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-three-white .accord-btn').removeClass('active');
-            
+    if ($('.accordion-three-white').length) {
+        $(".accordion-three-white").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-three-white .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-three-white .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box start
-    if($('.accordion-three-gray').length){
-        $(".accordion-three-gray").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-three-gray .accord-btn').removeClass('active');
-            
+    if ($('.accordion-three-gray').length) {
+        $(".accordion-three-gray").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-three-gray .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-three-gray .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box start
-    if($('.accordion-box-five').length){
-        $(".accordion-box-five").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-box-five .accord-btn').removeClass('active');
-            
+    if ($('.accordion-box-five').length) {
+        $(".accordion-box-five").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-box-five .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-box-five .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box start
-    if($('.accordion-box-six').length){
-        $(".accordion-box-six").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accordion-box-six .accord-btn').removeClass('active');
-            
+    if ($('.accordion-box-six').length) {
+        $(".accordion-box-six").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accordion-box-six .accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accordion-box-six .accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
-        }); 
+        });
     }
 
     //Accordion Box end
 
     // checkout  Accordion start
-    if($('.pament-option').length){
-        $(".pament-option").on('click', '.accord-btn', function() {
-        
-            if($(this).hasClass('active')!==true){
-            $('.accord-btn').removeClass('active');
-            
+    if ($('.pament-option').length) {
+        $(".pament-option").on('click', '.accord-btn', function () {
+
+            if ($(this).hasClass('active') !== true) {
+                $('.accord-btn').removeClass('active');
+
             }
-            
-            if ($(this).next('.accord-content').is(':visible')){
+
+            if ($(this).next('.accord-content').is(':visible')) {
                 $(this).removeClass('active');
                 $(this).next('.accord-content').slideUp(300);
-            }else{
+            } else {
                 $(this).addClass('active');
                 $('.accord-content').slideUp(300);
-                $(this).next('.accord-content').slideDown(300); 
+                $(this).next('.accord-content').slideDown(300);
             }
         });
     }
@@ -713,16 +713,16 @@
     // checkout Accordion end
 
 
-/*checkout page niceselect plugin*/
+    /*checkout page niceselect plugin*/
 
-    if($('.checkout-area').length){
+    if ($('.checkout-area').length) {
 
         $('.custom-select-icon').niceSelect();
 
     }
 
-/*apply-form page nice select */
-    if($('.apply-form').length){
+    /*apply-form page nice select */
+    if ($('.apply-form').length) {
 
         $('.custom-select-icon').niceSelect();
 
@@ -730,25 +730,25 @@
 
 
     /* Coming Soon CountDown Start */
-    if($('.coming-soon-inner').length !== 0){
-            const second = 1000,
-              minute = second * 60,
-              hour = minute * 60,
-              day = hour * 24;
-            let countDown = new Date('Jan 12, 2022 00:00:00').getTime(),
-        x = setInterval(function() {
-          let now = new Date().getTime(),
-              distance = countDown - now;
-            document.getElementById('days').innerText = Math.floor(distance / (day)),
-            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-          //do something later when date is reached
-          //if (distance < 0) {
-          //  clearInterval(x);
-          //  'IT'S MY BIRTHDAY!;
-          //}
-        }, second)
+    if ($('.coming-soon-inner').length !== 0) {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+        let countDown = new Date('Jan 12, 2022 00:00:00').getTime(),
+            x = setInterval(function () {
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+                //do something later when date is reached
+                //if (distance < 0) {
+                //  clearInterval(x);
+                //  'IT'S MY BIRTHDAY!;
+                //}
+            }, second)
     };
     /* Coming Soon CountDown End */
 
@@ -758,7 +758,7 @@
 
 
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip()
     })
 
 
@@ -769,7 +769,7 @@
             if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
                 $('.skillbar1').skillBars({
                     from: 0,
-                    speed: 2000, 
+                    speed: 2000,
                     interval: 100,
                     decimals: 0,
                 });
@@ -786,7 +786,7 @@
             if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
                 $('.skillbar2').skillBars({
                     from: 0,
-                    speed: 2000, 
+                    speed: 2000,
                     interval: 100,
                     decimals: 0,
                 });
@@ -802,7 +802,7 @@
             if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
                 $('.skillbar3').skillBars({
                     from: 0,
-                    speed: 2000, 
+                    speed: 2000,
                     interval: 100,
                     decimals: 0,
                 });
@@ -820,37 +820,37 @@
             if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
 
                 /*first*/
-                    $('.first.circle').circleProgress({
-                        size: 150,
-                        value: 0.6,
-                        lineCap: 'round',
-                        fill: {color: '#A78EC7'}
-                    }).on('circle-animation-progress', function(event, progress) {
+                $('.first.circle').circleProgress({
+                    size: 150,
+                    value: 0.6,
+                    lineCap: 'round',
+                    fill: { color: '#A78EC7' }
+                }).on('circle-animation-progress', function (event, progress) {
                     $(this).find('.percent').html(Math.round(60 * progress) + '<i>%</i>');
-                    });
+                });
 
                 /*second*/
-                  $('.second.circle').circleProgress({
-                        size: 150,
-                        value: 0.75,
-                        lineCap: 'round',
-                        fill: {color: '#A78EC7'}
-                  }).on('circle-animation-progress', function(event, progress) {
+                $('.second.circle').circleProgress({
+                    size: 150,
+                    value: 0.75,
+                    lineCap: 'round',
+                    fill: { color: '#A78EC7' }
+                }).on('circle-animation-progress', function (event, progress) {
                     $(this).find('.percent').html(Math.round(75 * progress) + '<i>%</i>');
-                  });
+                });
 
                 /*third*/
-                  $('.third.circle').circleProgress({
-                        size: 150,
-                        value: 0.9,
-                        lineCap: 'round',
-                        fill: {color: '#A78EC7'}
-                  }).on('circle-animation-progress', function(event, progress) {
+                $('.third.circle').circleProgress({
+                    size: 150,
+                    value: 0.9,
+                    lineCap: 'round',
+                    fill: { color: '#A78EC7' }
+                }).on('circle-animation-progress', function (event, progress) {
                     $(this).find('.percent').html(Math.round(90 * progress) + '<i>%</i>');
-                  });
+                });
 
 
-            $(window).off('scroll.circle');
+                $(window).off('scroll.circle');
             }
 
         });
@@ -859,7 +859,7 @@
 
 
 
-// Scroll to a Specific Div
+    // Scroll to a Specific Div
     if ($('.scroll-to-target').length) {
         $(".scroll-to-target").on('click', function () {
             var target = $(this).attr('data-target');
@@ -888,13 +888,13 @@
 
         /* Blog Isotope */
         $('.blog-masonry').isotope({
-          // set itemSelector so .grid-sizer is not used in layout
-          itemSelector: '.blog-masonry-item',
-          percentPosition: true,
-          masonry: {
-            // use element for option
-            columnWidth: '.blog-masonry-item',
-          }
+            // set itemSelector so .grid-sizer is not used in layout
+            itemSelector: '.blog-masonry-item',
+            percentPosition: true,
+            masonry: {
+                // use element for option
+                columnWidth: '.blog-masonry-item',
+            }
         });
 
 
@@ -902,3 +902,8 @@
 
 
 })(jQuery);
+
+(function () {
+    const el = document.getElementById("cdYear");
+    if (el) el.textContent = new Date().getFullYear();
+})();
