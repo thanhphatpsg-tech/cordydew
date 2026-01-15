@@ -515,6 +515,8 @@
   }
 }
 
+
+
 /* =================================    CSS: CordyDew Section
 ================================================= */
 
@@ -841,7 +843,7 @@
   font-weight: 800;
   font-size: 14px;
   color: #fff;
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  background: linear-gradient(135deg, #5C3A87, rgb(167, 142, 199));
   box-shadow: 0 12px 24px rgba(124, 58, 237, .18);
   flex: 0 0 auto;
 }

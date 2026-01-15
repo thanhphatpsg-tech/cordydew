@@ -6390,3 +6390,11 @@ body.hp-six {
 .prevention-item:hover .prevention-content h5 a {
     color: #fff;
 }
+
+@media (max-width: 767px) {
+    .banner-section {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+
+}
