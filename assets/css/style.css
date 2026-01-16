@@ -6173,6 +6173,10 @@ body.hp-six {
     width: 50%;
 }
 
+.hero-animation-image.c-home img {
+    width: 60%;
+}
+
 
 
 /*** 
@@ -6397,4 +6401,9 @@ body.hp-six {
         padding-bottom: 80px !important;
     }
 
+}
+
+.cd-footer-badges {
+    display: flex;
+    gap: 1rem;
 }
