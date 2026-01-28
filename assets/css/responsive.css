@@ -22,7 +22,8 @@
 	}
 
 	.hero-animation-image.c-home img {
-		width: 77%;
+		/* width: 77%; */
+		width: 60%;
 	}
 
 }
