@@ -401,7 +401,7 @@
   background: rgba(255, 255, 255, .5);
   border: 1px solid rgba(75, 27, 59, .14);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
-  color: #4b1b3b;
+  color: black;
   font-size: 13px;
   font-weight: 800;
   margin:0.5rem;
@@ -411,7 +411,7 @@
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: #4b1b3b;
+  background: black;
 }
 
 /* Content */
