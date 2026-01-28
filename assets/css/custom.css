@@ -296,9 +296,107 @@
   min-height: 560px;
   display: block;
   --accent: #4b1b3b;
-  --line: rgba(75, 27, 59, .18);
+  --line: rgba(75, 27, 59, .22);
   --cardW: 300px;
   --centerSize: 176px;
+
+  /* NEW: độ dài dây nối */
+  --conn: 140px;
+}
+
+/* ====== Arrow connectors (NEW) ====== */
+.mind-item::after,
+.mind-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.mind-item::after {
+  height: 2px;
+  background: var(--line);
+  opacity: 1;
+  border-radius: 999px;
+}
+
+.mind-item::before {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .06));
+}
+
+.mind-item.pos-1::after,
+.mind-item.pos-3::after,
+.mind-item.pos-5::after {
+  left: 100%;
+  width: var(--conn);
+}
+
+.mind-item.pos-1::before,
+.mind-item.pos-3::before,
+.mind-item.pos-5::before {
+  left: calc(100% + 2px); 
+  border-right-color: var(--line); 
+}
+
+.mind-item.pos-2::after,
+.mind-item.pos-4::after {
+  right: 100%;
+  width: var(--conn);
+}
+
+.mind-item.pos-2::before,
+.mind-item.pos-4::before {
+  right: calc(100% + 2px);
+  border-left-color: var(--line); 
+}
+
+/* ====== Layout đối xứng theo tâm (UPDATE dùng --conn) ====== */
+.mind-item.pos-1 {
+  top: 40px;
+  right: 50%;
+  margin-right: var(--conn);
+}
+
+.mind-item.pos-2 {
+  top: 120px;
+  left: 50%;
+  margin-left: var(--conn);
+}
+
+.mind-item.pos-3 {
+  top: 250px;
+  right: 50%;
+  margin-right: var(--conn);
+}
+
+.mind-item.pos-4 {
+  top: 360px;
+  left: 50%;
+  margin-left: var(--conn);
+}
+
+/* Nếu bạn không dùng pos-5 nữa thì có thể bỏ hẳn khối này,
+   còn nếu vẫn giữ trong CSS thì vẫn ok */
+.mind-item.pos-5 {
+  top: 470px;
+  right: 50%;
+  margin-right: var(--conn);
+}
+
+/* Tablet: thu lại cho vừa */
+@media (max-width: 991px) {
+  .mindmap {
+    min-height: 620px;
+    --cardW: 280px;
+    --centerSize: 164px;
+
+    /* NEW: dây ngắn hơn */
+    --conn: 115px;
+  }
 }
 
 /* Center */
