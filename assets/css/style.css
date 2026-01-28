@@ -6164,7 +6164,13 @@ body.hp-six {
     left: 7.2%;
     bottom: 3%;
 }
-
+@media only screen and (max-width: 1500px) {
+.hero-section.c-home .rotate-image img {
+    position: absolute;
+    left: 3.2%;
+    bottom: 2%;
+}
+}
 .hero-animation-image.c-home {
     position: absolute;
     animation-duration: 2s;
