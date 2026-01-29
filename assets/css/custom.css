@@ -404,7 +404,7 @@
   color: black;
   font-size: 13px;
   font-weight: 800;
-  margin:0.5rem;
+  margin: 0.5rem;
 }
 
 .cd-dot {
@@ -676,6 +676,122 @@
   50% {
     transform: translate(-50%, -50%) scale(1.03);
     box-shadow: 0 22px 46px rgba(75, 27, 59, .28);
+  }
+}
+
+/* CTA + Contact */
+.cd-cta {
+  position: relative;
+}
+
+.cd-cta-wrap {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.cd-cta-content {
+  border-radius: 18px;
+  padding: 42px 38px;
+  background: linear-gradient(135deg, rgba(125, 65, 255, 0.12), rgba(0, 180, 255, 0.10));
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cd-cta-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.cd-cta-desc {
+  margin-bottom: 22px;
+  opacity: 0.85;
+}
+
+.cd-cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cd-cta-btn {
+  padding: 12px 18px;
+  border-radius: 999px;
+}
+
+/* Right card */
+.cd-cta-contact {
+  display: flex;
+}
+
+.cd-cta-card {
+  width: 100%;
+  border-radius: 18px;
+  padding: 28px 26px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cd-cta-card-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.cd-cta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.cd-cta-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.cd-cta-list li span {
+  font-weight: 700;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.cd-cta-list a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cd-cta-mini {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.cd-cta-mini-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-cta-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-cta-title {
+    font-size: 24px;
   }
 }
 
