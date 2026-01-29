@@ -259,3 +259,59 @@
   .cd-contact-card{ padding: 18px 16px; }
   .cd-check{ align-items:flex-start; }
 }
+/* ===== Toast ===== */
+.cd-toast{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: 360px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(20, 20, 20, 0.92);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  transform: translateY(16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .25s ease;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.cd-toast.show{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.cd-toast__icon{
+  width: 28px; height: 28px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  background: rgba(255,255,255,.12);
+}
+.cd-toast.success .cd-toast__icon{ background: rgba(46, 204, 113, .25); }
+.cd-toast.error .cd-toast__icon{ background: rgba(231, 76, 60, .25); }
+.cd-toast.loading .cd-toast__icon{ background: rgba(52, 152, 219, .25); }
+
+/* ===== Button loading ===== */
+.cd-btn.is-loading{
+  opacity: .85;
+  cursor: not-allowed;
+}
+.cd-btn .cd-spinner{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.35);
+  border-top-color: rgba(255,255,255,1);
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 8px;
+  animation: cdspin .8s linear infinite;
+}
+@keyframes cdspin { to { transform: rotate(360deg); } }
