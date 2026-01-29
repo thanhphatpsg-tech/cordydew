@@ -1749,12 +1749,12 @@
    CordyDew VMV (beautified)
 ========================= */
 .cd-vmv2 {
-  position: relative;
+  /* position: relative;
   overflow: hidden;
   background:
     radial-gradient(900px 520px at 12% 16%, rgba(236, 72, 153, .10), transparent 55%),
     radial-gradient(900px 520px at 88% 24%, rgba(124, 58, 237, .10), transparent 55%),
-    linear-gradient(180deg, #ffffff, #fafbff);
+    linear-gradient(180deg, #ffffff, #fafbff); */
 }
 
 .cd-vmv2-top {
