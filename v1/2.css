@@ -2,7 +2,7 @@
    PALETTE CORDYDEW
    ================================ */
 :root {
-    --primary: rgb(167, 142, 199);     /* tím pastel */
+    --primary: #a78ec7;     /* tím pastel */
     --accent: #5C3A87;      /* tím đậm */
     --subbg: #F9E7C4;       /* vàng kem */
     --highlight: #E2C07A;   /* vàng đậm */
