@@ -6413,3 +6413,7 @@ body.hp-six {
     display: flex;
     gap: 1rem;
 }
+
+.cd-r-text,.cd-info-text {
+  text-transform: capitalize;
+}
