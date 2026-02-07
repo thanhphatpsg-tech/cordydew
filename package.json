@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node src/scripts/build.js",
     "watch": "node src/scripts/build.js --watch",
-    "dev": "node src/scripts/build.dev.js"
+    "dev": "node src/scripts/build.js --watch"
   },
   "dependencies": {
     "chokidar": "^3.6.0",
