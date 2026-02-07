@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.199" height="27.278" viewBox="0 0 39.199 27.278">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.469" y1="-3.92" x2="0.366" y2="7.149" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fedfb1"/>
+      <stop offset="1" stop-color="#ee3965"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_3826" data-name="Group 3826" transform="translate(-940 -1712)">
+    <g id="cloud" transform="translate(940 1712)">
+      <path id="Path_9829" data-name="Path 9829" d="M12.75,31.75H36.2a7,7,0,0,0,7-7v2.779a7,7,0,0,1-7,7H12.75A8.749,8.749,0,0,1,4,25.779V23A8.749,8.749,0,0,0,12.75,31.75Z" transform="translate(-4 -7.25)" fill="url(#linear-gradient)"/>
+      <path id="Path_9830" data-name="Path 9830" d="M12.757,7.5H12.75a8.75,8.75,0,1,0,0,17.5H36.2a7,7,0,0,0,0-14h-.7l-.084.014A11.9,11.9,0,0,0,12.757,7.5Z" transform="translate(-4 -0.5)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g id="cloud_2_" data-name="cloud (2)" transform="translate(929.88 1711.618)">
+      <g id="Group_3825" data-name="Group 3825" transform="translate(23 7.002)">
+        <path id="Path_9901" data-name="Path 9901" d="M31.035,9.38a.677.677,0,0,1-.407-.135L29.266,8.226a.68.68,0,1,1,.815-1.089l1.361,1.019a.68.68,0,0,1-.408,1.224Z" transform="translate(-24.918 -7.002)" fill="#fff"/>
+        <path id="Path_9902" data-name="Path 9902" d="M30.171,11.218a.68.68,0,0,1-.543-1.089l1.023-1.358a.68.68,0,1,1,1.086.818l-1.023,1.358A.678.678,0,0,1,30.171,11.218Z" transform="translate(-25.077 -7.481)" fill="#fff"/>
+        <path id="Path_9903" data-name="Path 9903" d="M29.12,20.739a6.12,6.12,0,1,1,0-12.24.68.68,0,0,1,0,1.36A4.762,4.762,0,1,0,32.1,10.905a.68.68,0,0,1,.851-1.059A6.118,6.118,0,0,1,29.12,20.739Z" transform="translate(-23 -7.481)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

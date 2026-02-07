@@ -1,0 +1,20 @@
+<svg id="server" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.329" height="33.329" viewBox="0 0 33.329 33.329">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.214" y1="-0.156" x2="0.545" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bcbeff"/>
+      <stop offset="0.227" stop-color="#aaadf8"/>
+      <stop offset="0.68" stop-color="#7c83e5"/>
+      <stop offset="1" stop-color="#5761d7"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_7626" data-name="Path 7626" d="M33.329,9.806V0H0V9.806H1.954v1.956H0v9.805H1.954v1.956H0v9.805H33.329V23.523H31.374V21.567h1.954V11.762H31.374V9.806ZM1.953,1.953H31.376v5.9H1.953ZM31.376,31.376H1.953v-5.9H31.376Zm-1.954-7.853H3.907V21.567H29.422Zm1.954-3.909H1.953v-5.9H31.376Zm-1.954-7.853H3.907V9.806H29.422Zm0,0" fill="url(#linear-gradient)"/>
+  <path id="Path_7627" data-name="Path 7627" d="M321.965,60.316h8.462v1.953h-8.462Zm0,0" transform="translate(-301.007 -56.39)" fill="url(#linear-gradient)"/>
+  <path id="Path_7628" data-name="Path 7628" d="M321.965,241h8.462v1.953h-8.462Zm0,0" transform="translate(-301.007 -225.312)" fill="url(#linear-gradient)"/>
+  <path id="Path_7629" data-name="Path 7629" d="M321.965,421.684h8.462v1.953h-8.462Zm0,0" transform="translate(-301.007 -394.234)" fill="url(#linear-gradient)"/>
+  <path id="Path_7630" data-name="Path 7630" d="M60.035,60.316H61.99v1.953H60.035Zm0,0" transform="translate(-56.127 -56.39)" fill="url(#linear-gradient)"/>
+  <path id="Path_7631" data-name="Path 7631" d="M120.086,60.316h1.954v1.953h-1.954Zm0,0" transform="translate(-112.269 -56.39)" fill="url(#linear-gradient)"/>
+  <path id="Path_7632" data-name="Path 7632" d="M60.035,241H61.99v1.953H60.035Zm0,0" transform="translate(-56.127 -225.312)" fill="url(#linear-gradient)"/>
+  <path id="Path_7633" data-name="Path 7633" d="M120.086,241h1.954v1.953h-1.954Zm0,0" transform="translate(-112.269 -225.312)" fill="url(#linear-gradient)"/>
+  <path id="Path_7634" data-name="Path 7634" d="M60.035,421.684H61.99v1.953H60.035Zm0,0" transform="translate(-56.127 -394.234)" fill="url(#linear-gradient)"/>
+  <path id="Path_7635" data-name="Path 7635" d="M120.086,421.684h1.954v1.953h-1.954Zm0,0" transform="translate(-112.269 -394.234)" fill="url(#linear-gradient)"/>
+</svg>

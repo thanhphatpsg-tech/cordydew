@@ -1,0 +1,10 @@
+<svg id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6390"/>
+      <stop offset="1" stop-color="#f82462"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_6444" data-name="Path 6444" d="M40.625,50H9.375A9.374,9.374,0,0,1,0,40.625V9.375A9.374,9.374,0,0,1,9.375,0h31.25A9.374,9.374,0,0,1,50,9.375v31.25A9.374,9.374,0,0,1,40.625,50Zm0,0" fill="url(#linear-gradient)"/>
+  <path id="Path_6445" data-name="Path 6445" d="M158.723,138.672H141.536a2.867,2.867,0,0,0-2.864,2.864v17.188a2.867,2.867,0,0,0,2.864,2.864h17.188a2.867,2.867,0,0,0,2.864-2.864V141.536A2.867,2.867,0,0,0,158.723,138.672ZM156.075,156.6a1.041,1.041,0,0,1-1.472,0l-5.208-5.208a1.039,1.039,0,0,1-.3-.736V143.62a1.042,1.042,0,1,1,2.084,0v6.6l4.9,4.9a1.044,1.044,0,0,1,0,1.472Zm0,0" transform="translate(-125.13 -125.13)" fill="#fff"/>
+</svg>

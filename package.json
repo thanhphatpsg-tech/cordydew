@@ -4,10 +4,14 @@
   "type": "module",
   "scripts": {
     "build": "node src/scripts/build.js",
-    "watch": "node src/scripts/build.js --watch"
+    "watch": "node src/scripts/build.js --watch",
+    "dev": "node src/scripts/build.dev.js"
   },
   "dependencies": {
     "chokidar": "^3.6.0",
     "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
   }
 }
