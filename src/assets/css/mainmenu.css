@@ -96,7 +96,7 @@
 .main-menu .navigation > li > a {
     position: relative;
     display: block;
-    font-size: 17px;
+    font-size: 12PX;
     color: #fff;
     padding: 5px 0px;
     margin: 27px 17px;
@@ -689,12 +689,12 @@
 
     /*    Con Cloud Page*/
     .con-cloud .main-menu .navigation > li > a {
-        font-size: 17px;
+        font-size: 12px;
     }
     
     /*    home Page four*/
     .hp-four .main-menu .navigation > li > a {
-        font-size: 17px;
+        font-size: 12px;
     }
 
     /*    home Page six*/
