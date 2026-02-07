@@ -97,7 +97,7 @@
     position: relative;
     display: block;
     font-size: 12px;
-    color: #fff;
+    color: #81317b;
     padding: 5px 0px;
     margin: 27px 17px;
     border-bottom: 2px solid transparent;
@@ -126,7 +126,7 @@
     padding: 7px 0;
     z-index: 100;
     display: none;
-    background: #ffffff;
+    background:#81317b;
     -webkit-box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.07);
     box-shadow: 0px 30px 30px rgba(115, 117, 165, 0.07);
 }
@@ -249,7 +249,7 @@
 
 .main-menu .navigation > li:hover > a,
 .main-menu .navigation > li.current > a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #81317b;
 }
 
 
@@ -807,7 +807,8 @@
         .main-menu .navigation > li.dropdown > a:before,
         .main-menu .navigation > li > ul > li > a::before,
         .main-menu .navigation > li > ul > li > ul > li > a::before {
-            color: #ffffff !important;
+            /* color: #ffffff !important; */
+            color: #81317b !important;
             right: 15px;
             font-size: 16px;
             display: none !important;
