@@ -1,0 +1,121 @@
+extends ../layouts/default.pug
+
+block vars
+  - var activePage = 'sponsor'
+
+block headLinks
+  link(rel="stylesheet" href="assets/css/sponsor-page.css")
+
+block content
+  // BANNER
+  section.banner-section.pt-200.pb-175
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            h1 Nhà tài trợ
+            p.sp-subtitle.text-white Tri ân & giới thiệu sản phẩm từ đối tác đồng hành cùng CordyDew
+
+  // Sponsor intro
+  section.sp-intro.pt-95.pb-70
+    .container
+      .row.align-items-center
+        .col-lg-7.mb-30
+          .sp-card.sp-soft
+            span.sp-badge Đối tác đồng hành
+
+            h2.sp-title
+              | Nhà tài trợ:
+              span.sp-brand  CÔNG TY TNHH NÔNG NGHIỆP VACO
+
+            p.mb-10
+              | CordyDew trân trọng sự đồng hành của nhà tài trợ trong hành trình đổi mới sáng tạo.
+              |  Sự hỗ trợ này giúp chúng tôi hoàn thiện sản phẩm, tăng chất lượng trải nghiệm và mở rộng
+              |  hoạt động nghiên cứu.
+
+            .sp-highlights.mt-20
+              .sp-hi
+                .sp-ic
+                  i.fa.fa-handshake-o
+                div
+                  h6 Hợp tác bền vững
+                  p Đồng hành cùng tinh thần đổi mới, hướng tới giá trị cộng đồng.
+
+              .sp-hi
+                .sp-ic
+                  i.fa.fa-line-chart
+                div
+                  h6 Gia tăng tác động
+                  p Hỗ trợ phát triển thử nghiệm – truyền thông – kết nối nguồn lực.
+
+              .sp-hi
+                .sp-ic
+                  i.fa.fa-star
+                div
+                  h6 Đồng thương hiệu
+                  p Xuất hiện trên landing page và các hoạt động truyền thông phù hợp.
+
+            .sp-cta.mt-25
+              a.btn-bg.sp-btn(href="contact.html")
+                | Liên hệ hợp tác
+                i.fa.fa-arrow-right
+              a.sp-link(href="#sponsor-products") Xem sản phẩm nhà tài trợ
+
+        .col-lg-5.mb-30
+          .sp-visual
+            img(src="assets/img/about/about-content.png" alt="Sponsor Visual")
+            .sp-blob
+            .sp-dots
+
+          .sp-mini.mt-20
+            .sp-mini-item
+              h6 Hình thức tài trợ
+              p Tài trợ chi phí/hiện vật/mentor chuyên môn/kênh phân phối.
+            .sp-mini-item
+              h6 Cam kết minh bạch
+              p Báo cáo tiến độ và cập nhật hoạt động sử dụng tài trợ theo kỳ.
+
+  // Products section
+  section#sponsor-products.sp-products.pt-70.pb-90
+    .container
+      .row.justify-content-center
+        .col-lg-8.text-center.mb-40
+          .section-title
+            h2 Sản phẩm của nhà tài trợ
+            p Danh sách sản phẩm hiển thị.
+
+      // Filter (optional)
+      .row.justify-content-center.mb-25
+        .col-lg-10
+          .sp-toolbar
+            .sp-search
+              i.fa.fa-search
+              input#spSearch(type="text" placeholder="Tìm sản phẩm theo tên...")
+
+            //- select#spSort.sp-sort
+            //-   option(value="default") Sắp xếp: Mặc định
+            //-   option(value="name_asc") Tên A → Z
+            //-   option(value="name_desc") Tên Z → A
+            //-   option(value="price_asc") Giá thấp → cao
+            //-   option(value="price_desc") Giá cao → thấp
+
+      // Grid
+      .row#spProductGrid
+
+  // CTA bottom
+  section.sp-bottom-cta.pt-70.pb-70
+    .container
+      .row.justify-content-center
+        .col-lg-10
+          .sp-cta-card
+            div
+              h3 Cùng CordyDew tạo ra tác động tích cực
+              p.mb-0
+                | Nếu bạn muốn đồng hành tài trợ/đối tác, hãy để lại thông tin — chúng tôi sẽ liên hệ sớm.
+            a.btn-bg.sp-btn(href="contact.html")
+              | Gửi yêu cầu hợp tác
+              i.fa.fa-arrow-right
+
+block pageScripts
+
+  script(src="assets/js/sponsor-page.js")

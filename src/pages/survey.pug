@@ -1,0 +1,475 @@
+extends ../layouts/default.pug
+
+block vars
+  - var activePage = 'survey'
+
+block headLinks
+  link(rel="stylesheet" href="assets/css/survey-page.css")
+
+block content
+  // BANNER
+  section.banner-section.pt-200.pb-175
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            h1 Khảo sát thông tin
+            p.cd-page-sub.text-white
+              | Giúp CordyDew hiểu rõ thói quen và nhu cầu chăm sóc hệ tiêu hóa để cải tiến sản phẩm phù hợp hơn.
+
+  // SURVEY
+  section.survey-page.pt-0.pb-90
+    .container
+      .row.justify-content-center
+        .col-lg-9
+          .survey-card
+            .survey-head
+              div
+                h2.survey-title Khảo sát trải nghiệm
+                p.survey-sub Mất khoảng 2–3 phút. Thông tin giúp chúng tôi cải thiện dịch vụ.
+
+              .survey-progress-wrap
+                .survey-progress-meta
+                  span#surveyProgressText 0% hoàn thành
+                  span#surveyStepText 0/8
+                .survey-progress
+                  .survey-progress-bar#surveyProgressBar(style="width:0%")
+
+            form#surveyForm.survey-form(novalidate)
+
+              // =========================
+              // PHẦN A
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN A. THÔNG TIN CHUNG – PHÂN KHÚC KHÁCH HÀNG
+
+              // A1
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 A1) Bạn thuộc nhóm tuổi nào?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="a_age" value="under18" required)
+                    span Dưới 18
+                  label.survey-opt
+                    input(type="radio" name="a_age" value="18_25")
+                    span 18–25
+                  label.survey-opt
+                    input(type="radio" name="a_age" value="26_44")
+                    span 26–44
+                  label.survey-opt
+                    input(type="radio" name="a_age" value="45plus")
+                    span Trên 45
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // A2
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 A2) Nghề nghiệp chính của bạn hiện nay?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="a_job" value="student" required)
+                    span Học sinh / sinh viên
+                  label.survey-opt
+                    input(type="radio" name="a_job" value="office")
+                    span Nhân viên văn phòng
+                  label.survey-opt
+                    input(type="radio" name="a_job" value="business_fb")
+                    span Kinh doanh / F&amp;B
+                  label.survey-opt
+                    input(type="radio" name="a_job" value="household")
+                    span Nội trợ / chăm sóc gia đình
+                  label.survey-opt
+                    input(type="radio" name="a_job" value="other" data-toggle="surveyOther")
+                    span Khác
+
+                .survey-field.survey-other(data-for="a_job" style="display:none;")
+                  input.survey-input(type="text" name="a_job_other" placeholder="Nhập nghề nghiệp khác...")
+
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // A3
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 A3) Bạn thường sử dụng các sản phẩm ăn vặt / đồ uống tiện lợi bao lâu một lần?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="a_snack_freq" value="daily" required)
+                    span Hằng ngày
+                  label.survey-opt
+                    input(type="radio" name="a_snack_freq" value="2_3_week")
+                    span 2–3 lần/tuần
+                  label.survey-opt
+                    input(type="radio" name="a_snack_freq" value="weekly")
+                    span 1 lần/tuần
+                  label.survey-opt
+                    input(type="radio" name="a_snack_freq" value="rare")
+                    span Ít khi
+                  label.survey-opt
+                    input(type="radio" name="a_snack_freq" value="almost_never")
+                    span Gần như không
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // =========================
+              // PHẦN B
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN B. NHẬN THỨC &amp; XU HƯỚNG TIÊU DÙNG LÀNH MẠNH
+                p.survey-sub(style="margin-top:6px;")
+                  | Thang điểm: 1 – Hoàn toàn không đồng ý • 2 – Không đồng ý • 3 – Bình thường • 4 – Đồng ý • 5 – Hoàn toàn đồng ý
+
+              // B1
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 B1) Tôi quan tâm đến các sản phẩm vừa tiện lợi vừa tốt cho hệ tiêu hóa khi lựa chọn thực phẩm hằng ngày.
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="B1 rating")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="b1" value=v required=(v===1))
+                      span= v
+                .survey-error Vui lòng chọn mức điểm.
+
+              // B2
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 B2) Tôi có nhận thức rằng probiotics và thực phẩm lên men đóng vai trò quan trọng đối với sức khỏe đường ruột.
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="B2 rating")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="b2" value=v required=(v===1))
+                      span= v
+                .survey-error Vui lòng chọn mức điểm.
+
+              // B3
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 B3) Tôi ưu tiên lựa chọn các sản phẩm có nguồn gốc tự nhiên, ít phụ gia, tốt cho sức khỏe lâu dài.
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="B3 rating")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="b3" value=v required=(v===1))
+                      span= v
+                .survey-error Vui lòng chọn mức điểm.
+
+              // B4
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 B4) Tôi sẵn sàng sử dụng sản phẩm tốt cho tiêu hóa thay cho các lựa chọn kém lành mạnh hơn.
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="B4 rating")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="b4" value=v required=(v===1))
+                      span= v
+                .survey-error Vui lòng chọn mức điểm.
+
+              // =========================
+              // PHẦN C
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN C. THỜI ĐIỂM &amp; THÓI QUEN SỬ DỤNG
+
+              // C1 (multi)
+              .survey-q(data-required="1" data-minchecks="1")
+                .survey-q-top
+                  h4 C1) Bạn thường sử dụng các sản phẩm tốt cho hệ tiêu hóa vào thời điểm nào? (chọn ít nhất 1)
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="checkbox" name="c1_time[]" value="morning")
+                    span Buổi sáng
+                  label.survey-opt
+                    input(type="checkbox" name="c1_time[]" value="before_meal")
+                    span Trước bữa ăn
+                  label.survey-opt
+                    input(type="checkbox" name="c1_time[]" value="during_meal")
+                    span Trong bữa ăn
+                  label.survey-opt
+                    input(type="checkbox" name="c1_time[]" value="after_meal")
+                    span Sau bữa ăn
+                  label.survey-opt
+                    input(type="checkbox" name="c1_time[]" value="between_meals")
+                    span Giữa các bữa / khi đói nhẹ
+                .survey-error Vui lòng chọn ít nhất 1 lựa chọn.
+
+              // C2
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 C2) Theo bạn, sản phẩm như CordyDew phù hợp nhất để sử dụng vào thời điểm nào?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="c2_best_time" value="before_meal" required)
+                    span Trước bữa ăn
+                  label.survey-opt
+                    input(type="radio" name="c2_best_time" value="after_meal")
+                    span Sau bữa ăn
+                  label.survey-opt
+                    input(type="radio" name="c2_best_time" value="midday")
+                    span Giữa buổi (xế chiều, tối)
+                  label.survey-opt
+                    input(type="radio" name="c2_best_time" value="anytime")
+                    span Bất kỳ lúc nào trong ngày
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // =========================
+              // PHẦN D
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN D. TRẢI NGHIỆM CẢM QUAN &amp; ĐÁNH GIÁ SẢN PHẨM CORDYDEW
+                p.survey-sub(style="margin-top:6px;") (Đánh giá sau khi trực tiếp trải nghiệm sản phẩm)
+
+              // D1
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D1) Bạn có cảm nhận được vị đặc trưng của probiotics trong sản phẩm không?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="d1_probiotic_taste" value="no" required)
+                    span Không cảm nhận được
+                  label.survey-opt
+                    input(type="radio" name="d1_probiotic_taste" value="light")
+                    span Cảm nhận nhẹ
+                  label.survey-opt
+                    input(type="radio" name="d1_probiotic_taste" value="clear_pleasant")
+                    span Cảm nhận rõ nhưng dễ chịu
+                  label.survey-opt
+                    input(type="radio" name="d1_probiotic_taste" value="clear_like")
+                    span Cảm nhận rõ và thích
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // D2
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D2) Bạn có cảm nhận được hương vị khoai lang tím tự nhiên không?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="d2_purple_sweet_potato" value="no" required)
+                    span Không
+                  label.survey-opt
+                    input(type="radio" name="d2_purple_sweet_potato" value="little")
+                    span Ít
+                  label.survey-opt
+                    input(type="radio" name="d2_purple_sweet_potato" value="enough")
+                    span Vừa đủ
+                  label.survey-opt
+                    input(type="radio" name="d2_purple_sweet_potato" value="clear_pleasant")
+                    span Rõ, dễ chịu
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // D3a
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D3a) Bạn đánh giá thế nào về kết cấu sản phẩm — Độ mịn?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="d3_smoothness" value="poor" required)
+                    span Kém
+                  label.survey-opt
+                    input(type="radio" name="d3_smoothness" value="average")
+                    span Trung bình
+                  label.survey-opt
+                    input(type="radio" name="d3_smoothness" value="good")
+                    span Tốt
+                  label.survey-opt
+                    input(type="radio" name="d3_smoothness" value="very_good")
+                    span Rất tốt
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // D3b
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D3b) Bạn đánh giá thế nào về kết cấu sản phẩm — Độ dai?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="d3_chewiness" value="too_soft" required)
+                    span Quá mềm
+                  label.survey-opt
+                    input(type="radio" name="d3_chewiness" value="fit")
+                    span Phù hợp
+                  label.survey-opt
+                    input(type="radio" name="d3_chewiness" value="a_bit_chewy")
+                    span Hơi dai
+                  label.survey-opt
+                    input(type="radio" name="d3_chewiness" value="very_chewy")
+                    span Dai nhiều
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // D4
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D4) Mức độ hài lòng chung về trải nghiệm sản phẩm CordyDew
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="D4 satisfaction")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="d4_satisfaction" value=v required=(v===1))
+                      span= v
+                .survey-error Vui lòng chọn mức điểm.
+
+              // D5
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 D5) Bạn đánh giá hình dạng và mức độ tiện lợi khi sử dụng sản phẩm
+                  span.survey-req * bắt buộc
+                .survey-rating(role="radiogroup" aria-label="D5 convenience")
+                  each v in [1,2,3,4,5]
+                    label.rate-pill
+                      input(type="radio" name="d5_convenience" value=v required=(v===1))
+                      span= v
+                .survey-hint 1 = rất bất tiện, 5 = rất tiện lợi
+                .survey-error Vui lòng chọn mức điểm.
+
+              // =========================
+              // PHẦN E
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN E. CHI PHÍ &amp; KHẢ NĂNG CHI TRẢ CHO SẢN PHẨM SỨC KHỎE
+
+              // E1
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 E1) Trung bình mỗi tháng, bạn chi khoảng bao nhiêu cho các sản phẩm hỗ trợ tiêu hóa?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="e1_monthly_spend" value="under50" required)
+                    span Dưới 50.000đ
+                  label.survey-opt
+                    input(type="radio" name="e1_monthly_spend" value="50_100")
+                    span 50.000 – 100.000đ
+                  label.survey-opt
+                    input(type="radio" name="e1_monthly_spend" value="100_200")
+                    span 100.000 – 200.000đ
+                  label.survey-opt
+                    input(type="radio" name="e1_monthly_spend" value="over200")
+                    span Trên 200.000đ
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // E2
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 E2) Với mức giá dự kiến khoảng 8.000đ/sản phẩm CordyDew, bạn đánh giá mức giá này:
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="e2_price_eval" value="too_high" required)
+                    span Quá cao
+                  label.survey-opt
+                    input(type="radio" name="e2_price_eval" value="a_bit_high")
+                    span Hơi cao
+                  label.survey-opt
+                    input(type="radio" name="e2_price_eval" value="fit")
+                    span Phù hợp
+                  label.survey-opt
+                    input(type="radio" name="e2_price_eval" value="very_reasonable")
+                    span Rất hợp lý
+                  label.survey-opt
+                    input(type="radio" name="e2_price_eval" value="low")
+                    span Thấp so với giá trị nhận được
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // =========================
+              // PHẦN F
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN F. NHẬN THỨC VỀ CHẤT LƯỢNG &amp; AN TOÀN THỰC PHẨM
+
+              // F1
+              .survey-q(data-required="1")
+                .survey-q-top
+                  h4 F1) Bạn có biết hoặc từng nghe về các chỉ tiêu chất lượng của sữa chua / sản phẩm probiotic không?
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="radio" name="f1_quality_awareness" value="yes" required)
+                    span Có
+                  label.survey-opt
+                    input(type="radio" name="f1_quality_awareness" value="some")
+                    span Biết sơ qua
+                  label.survey-opt
+                    input(type="radio" name="f1_quality_awareness" value="no")
+                    span Không
+                .survey-error Vui lòng chọn 1 đáp án.
+
+              // F2 (multi)
+              .survey-q(data-required="1" data-minchecks="1")
+                .survey-q-top
+                  h4 F2) Theo bạn, khi một sản phẩm như CordyDew lưu hành trên thị trường, yếu tố nào là quan trọng nhất? (chọn nhiều)
+                  span.survey-req * bắt buộc
+                .survey-grid
+                  label.survey-opt
+                    input(type="checkbox" name="f2_factors[]" value="live_ratio")
+                    span Tỷ lệ vi sinh sống (probiotics)
+                  label.survey-opt
+                    input(type="checkbox" name="f2_factors[]" value="micro_safe")
+                    span An toàn vi sinh
+                  label.survey-opt
+                    input(type="checkbox" name="f2_factors[]" value="phys_chem")
+                    span Chất lượng & độ ổn định sản phẩm
+                  label.survey-opt
+                    input(type="checkbox" name="f2_factors[]" value="nutrition")
+                    span Giá trị dinh dưỡng
+                  label.survey-opt
+                    input(type="checkbox" name="f2_factors[]" value="origin")
+                    span Nguồn gốc nguyên liệu
+                .survey-error Vui lòng chọn ít nhất 1 lựa chọn.
+
+              // =========================
+              // PHẦN G
+              // =========================
+              .survey-section
+                h3.survey-section-title PHẦN G. Ý KIẾN ĐÓNG GÓP (KHÔNG BẮT BUỘC)
+                p.survey-sub(style="margin-top:6px;")
+                  | (Bạn có thể bỏ qua phần này nếu không có thêm ý kiến)
+
+              // G1
+              .survey-q(data-required="0")
+                .survey-q-top
+                  h4 G1) Điều bạn hài lòng nhất khi trải nghiệm CordyDew là gì?
+                  span.survey-req.survey-req--optional tuỳ chọn
+                .survey-field
+                  textarea.survey-textarea(name="g1_best" rows="4" placeholder="Nhập câu trả lời...")
+
+              // G2
+              .survey-q(data-required="0")
+                .survey-q-top
+                  h4 G2) Điều gì khiến bạn còn băn khoăn trước khi quyết định mua CordyDew?
+                  span.survey-req.survey-req--optional tuỳ chọn
+                .survey-field
+                  textarea.survey-textarea(name="g2_concern" rows="4" placeholder="Nhập câu trả lời...")
+
+              // G3
+              .survey-q(data-required="0")
+                .survey-q-top
+                  h4 G3) Bạn mong muốn CordyDew cải tiến hoặc phát triển thêm điểm gì trong tương lai?
+                  span.survey-req.survey-req--optional tuỳ chọn
+                .survey-field
+                  textarea.survey-textarea(name="g3_improve_future" rows="4" placeholder="Nhập câu trả lời...")
+
+              // Actions
+              .survey-actions
+                button#surveyResetBtn.survey-btn.survey-btn-ghost(type="button") Làm lại
+                button#surveySubmitBtn.survey-btn.survey-btn-primary(type="submit")
+                  | Gửi khảo sát
+                  span.survey-btn-icon →
+
+              // Result
+              #surveyResult.survey-result(style="display:none;")
+                .survey-result-box
+                  h3.survey-result-title Cảm ơn bạn!
+                  p#surveyResultDesc.survey-result-desc
+                  pre#surveyJson.survey-json
+
+block pageScripts
+  script(src="assets/js/survey-page.js")

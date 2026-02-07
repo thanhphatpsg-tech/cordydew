@@ -1,0 +1,36 @@
+header.main-header
+  .header-upper
+    .container.clearfix
+      .header-inner.clearfix.d-lg-flex
+        .logo-outer
+          .logo
+            a(href="index.html")
+              img(src="assets/img/logo/logo.png" alt="" title="")
+          .fixed-logo
+            a(href="index.html")
+              img(src="assets/img/logo/footer-logo.png" alt="" title="")
+
+        nav.main-menu.navbar-expand-md.ml-md-auto
+          .navbar-header.clearfix
+            .logo
+              a(href="index.html")
+                img(src="assets/img/logo/logo.png" alt="" title="")
+            .fixed-logo
+              a(href="index.html")
+                img(src="assets/img/logo/footer-logo.png" alt="" title="")
+
+            button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse-one")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+          .navbar-collapse.navbar-collapse-one.collapse.clearfix
+            include ./nav.pug
+
+            ul.navigation.clearfix
+              +navItem("index.html", "Trang chủ", "home", true)
+              +navItem("introduce.html", "Giới thiệu", "introduce", false)
+              +navItem("survey.html", "Khảo sát", "survey", false)
+              +navItem("about.html", "Về chúng tôi", "about", true)
+              +navItem("contact.html", "Liên hệ", "contact", true)
+              +navItem("sponsor.html", "Nhà tài trợ", "sponsor", true)

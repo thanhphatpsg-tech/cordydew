@@ -1,0 +1,75 @@
+extends ../layouts/default.pug
+
+block vars
+  - var activePage = ''
+
+block headLinks
+
+block content
+  // BANNER
+  section.banner-section.pt-200.pb-175
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            h1 Thank You
+
+  // THANK YOU SECTION
+  section.thank-you-section.another-page.pt-75.pb-30
+    .container
+      .row.justify-content-center
+        .col-12.text-center
+          .thank-you-image
+            img(src="assets/img/thank-you/thank-you.png" alt="")
+
+        .col-lg-8.text-center
+          .thank-you-text
+            h2 Thank you for your Subscription!
+            p
+              | We provide support and knowledge to our team ensuring we meet
+              | and exceed our client’s expectations of a friendly, professional
+              | and efficient service.
+
+          .home-or-search
+            a.btn-bg(href="index.html") Go Home
+            span.or Or
+
+            // Search form
+            .search-box
+              form(method="post" action="contact.html")
+                .form-group
+                  input(
+                    type="search"
+                    name="search-field"
+                    placeholder="Search"
+                    required
+                  )
+                  button(type="submit")
+                    span.icon.fa.fa-search
+
+  // PARTNERS
+  section.partners-section
+    .container
+      .partner-carousel.owl-carousel
+
+        each logo in ['google', 'microsoft', 'slack', 'asana', 'airbnb']
+          .item
+            a(href="#")
+              img(src=`assets/img/clients/${logo}.png` alt="Client")
+              img(src=`assets/img/clients/${logo}-color.png` alt="Client")
+
+      // CTA
+      .cta-action-style-two.cta-action-form
+        .row.align-items-center
+          .col-lg-6.text-lg-left.text-center
+            h4.cta-title Subscribe to Our Newsletter
+            p.cta-text
+              | Stay in touch with us to get latest news and discount coupons
+
+          .col-lg-6.d-flex.justify-content-lg-end.justify-content-center.py-20
+            form.subscribe-form
+              .form-group
+                input(type="email" placeholder="Your Email")
+                button(type="submit" class="flaticon-paper-plane")
+
+block pageScripts

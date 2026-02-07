@@ -1,0 +1,249 @@
+extends ../layouts/default.pug
+block vars
+  - var activePage = "home"
+
+block content
+  // HERO
+  section.hero-section.c-home.py-100.bg-img.d-flex.align-items-center(style="background-image:url(assets/img/hero-section/hero-bg.png);")
+    .rotate-image
+      img.rotate-me(src="assets/img/home-seven/rti-1.png" alt="" style="height: 20%;")
+    .container
+      .row
+        .col-md-6
+          .hero-text
+            h1.hero-title
+              span.brand CordyDew
+              span.slogan "Thạch sữa chua probiotics sáng tạo"
+            p.hero-subtitle
+              | Thạch Sữa Chua Probiotics
+              br
+              | Nâng Tầm Sức Khỏe Tự Nhiên
+            p.hero-desc
+              | Kết hợp Đông trùng hạ thảo - Khoai lang tím
+              br
+              | Probiotics cho hệ tiêu hóa khỏe mạnh.
+            a.btn(href="#" data-video-open) Tìm hiểu CordyDew
+            a.btn.btn-outline(href="survey.html") Khảo sát
+
+        .d-none.d-md-block.hero-animation-image.c-home
+          img(src="assets/img/home-seven/cordydew-product-2.png" alt="Thạch sữa chua sinh học CordyDew Probiotics")
+
+  // STORY
+  section.cordydew-story.split-story
+    .container
+      .row.align-items-center.g-4
+        .col-lg-6
+          .section-title.text-start
+            h2.story-title Câu chuyện về CordyDew
+            p.story-lead
+              | CordyDew ra đời với mong muốn mang đến một giải pháp hỗ trợ hệ tiêu hóa đơn giản,
+              | tiện lợi và dễ tiếp cận.
+            p.story-text
+              | Sản phẩm được phát triển theo hướng probiotics sáng tạo, kết hợp
+              b  khoai lang tím
+              |  và
+              b  đông trùng hạ thảo
+              | , hướng đến giá trị sức khỏe và trải nghiệm phù hợp với người tiêu dùng trẻ.
+            .story-highlights
+              .hl
+                .dot
+                span Đơn giản – tiện lợi – dễ tiếp cận
+              .hl
+                .dot
+                span Probiotics sáng tạo
+              .hl
+                .dot
+                span Kết hợp khoai lang tím & đông trùng hạ thảo
+        .col-lg-6
+          .story-media
+            img.img-fluid.story-img(src="assets/img/home-seven/cordydew-story.jpg" alt="CordyDew story")
+  // WHY CHOOSE US (Mindmap)
+  section.symptoms-sec.pt-100.pb-100.why-sec
+    .container
+      .row.justify-content-center
+        .col-lg-8.text-center
+          .section-title
+            h2 Vì sao chọn chúng tôi?
+            p
+              | CordyDew mang đến giải pháp probiotics mới mẻ,
+              | phù hợp nhịp sống hiện đại của người trẻ.
+
+      .row
+        .col-md-12.mt-27
+          .mindmap
+            .mindmap-center
+              | Vì sao
+              br
+              | chọn
+              br
+              | chúng tôi?
+
+            .mindmap-items
+              .mind-item.pos-1(data-wow-delay="300ms" data-wow-duration="1500ms")
+                h5 Đổi mới sáng tạo
+                p
+                  | Phát triển hình thức thạch probiotics khác biệt
+                  | so với sữa chua truyền thống.
+
+              .mind-item.pos-2(data-wow-delay="300ms" data-wow-duration="1500ms")
+                h5 Tiện lợi cho người trẻ
+                p
+                  | Dễ ăn, dễ mang theo, phù hợp nhịp sống năng động
+                  | và hiện đại.
+
+              .mind-item.pos-3(data-wow-delay="300ms" data-wow-duration="1500ms")
+                h5 Nguyên liệu tự nhiên
+                p
+                  | Kết hợp khoai lang tím và đông trùng hạ thảo,
+                  | giàu giá trị dinh dưỡng.
+
+              .mind-item.pos-4(data-wow-delay="300ms" data-wow-duration="1500ms")
+                h5 Chất lượng & trải nghiệm
+                p
+                  | Cân bằng hiệu quả hỗ trợ tiêu hóa và
+                  | trải nghiệm sử dụng mỗi ngày.
+
+          // Mobile: accordion
+          .why-accordion
+            details(open)
+              summary Đổi mới sáng tạo
+              .acc-body
+                | Phát triển hình thức thạch probiotics khác biệt
+                | so với sữa chua truyền thống.
+
+            details
+              summary Tiện lợi cho người trẻ
+              .acc-body
+                | Dễ ăn, dễ mang theo, phù hợp nhịp sống năng động.
+
+            details
+              summary Nguyên liệu tự nhiên
+              .acc-body
+                | Kết hợp khoai lang tím và đông trùng hạ thảo,
+                | giàu giá trị dinh dưỡng.
+
+            details
+              summary Chất lượng & trải nghiệm
+              .acc-body
+                | Cân bằng hiệu quả hỗ trợ tiêu hóa và trải nghiệm sử dụng.
+
+  // BENEFIT
+  section.pt-100.pb-100.cd-benefit
+    .container
+      .row.justify-content-center
+        .col-lg-8.text-center
+          .section-title
+            h2 CordyDew mang lại điều gì?
+            p
+              | Không chỉ là một sản phẩm probiotics, CordyDew hướng đến
+              | trải nghiệm sử dụng hằng ngày nhẹ nhàng và tiện lợi.
+
+      .row.justify-content-center.mt-35
+        .col-lg-7
+          ul.cd-benefit-list
+            li
+              span.cd-check ✓
+              |  Hỗ trợ tiêu hóa và cân bằng hệ vi sinh đường ruột
+            li
+              span.cd-check ✓
+              |  Bổ sung chất xơ và dưỡng chất tự nhiên
+            li
+              span.cd-check ✓
+              |  Trải nghiệm sử dụng mới mẻ, tiện lợi mỗi ngày
+
+  // FEATURED PRODUCT
+  section#featured-product-cordydew.pt-100.pb-100.cd-product-one
+    .container
+      .row.justify-content-center
+        .col-lg-9.text-center
+          .section-title
+            h2 Sản phẩm nổi bật
+            p
+              | Thạch probiotics CordyDew — lựa chọn tiện lợi để hỗ trợ tiêu hoá và chăm sóc cơ thể hằng ngày.
+
+      .row.mt-45.align-items-center
+        // Image
+        .col-lg-5.rmb-30
+          .cd-prod-media
+            img.cd-prod-img(src="assets/img/products/cordydew.jpg" alt="Thạch probiotics CordyDew")
+
+            .cd-prod-float
+              .cd-float-item
+                span.cd-dot
+                b Ngon – nhanh – gọn
+              .cd-float-item
+                span.cd-dot
+                b Dễ dùng mỗi ngày
+
+        // Content
+        .col-lg-7
+          .cd-prod-content
+            h3.cd-prod-title Thạch probiotics CordyDew
+            p.cd-prod-desc
+              | Thạch sữa chua kết hợp 
+              b probiotics
+              | , 
+              b khoai lang tím
+              |  và 
+              b đông trùng hạ thảo
+              | , hỗ trợ tiêu hóa và dễ sử dụng hằng ngày.
+
+            .cd-prod-grid
+              .cd-prod-feature
+                div
+                  h5 Probiotics
+                  p Hỗ trợ tiêu hóa – miễn dịch
+
+              .cd-prod-feature
+                div
+                  h5 Khoai lang tím
+                  p Prebiotics &amp; chống oxy hóa
+
+              .cd-prod-feature
+                div
+                  h5 Đông trùng hạ thảo
+                  p Tăng cường sức khỏe tổng thể
+
+              .cd-prod-feature
+                div
+                  h5 Sữa chua lên men tự nhiên
+                  p Nền dinh dưỡng an toàn, dễ hấp thu
+
+            .cd-prod-cta
+              a.cd-prod-btn(href="contact.html") Nhận mẫu thử / tư vấn
+              span.cd-prod-note Phù hợp cho sử dụng hằng ngày
+
+  // VISION & MISSION
+  section#vision-mission-cordydew.pt-100.pb-100.cd-vmv2
+    .container
+      .row.justify-content-center
+        .col-lg-9.text-center
+          .section-title
+            h2 Tầm nhìn &amp; Sứ mệnh
+            p
+              | CordyDew theo đuổi probiotics hiện đại — tiện lợi, chất lượng và phù hợp nhịp sống người trẻ.
+
+      .row.mt-45.align-items-stretch
+        // Left: Vision
+        .col-lg-6.rmb-30
+          .cd-vmv2-card
+            .cd-vmv2-head
+              h3.cd-vmv2-card-title Tầm nhìn
+            p.cd-vmv2-text
+              | Trở thành thương hiệu probiotics sáng tạo, kết hợp 
+              b dinh dưỡng – tiện lợi – trải nghiệm
+              | , hướng đến người tiêu dùng trẻ và thị trường quốc tế.
+
+        // Right: Mission
+        .col-lg-6
+          .cd-vmv2-card
+            .cd-vmv2-head
+              h3.cd-vmv2-card-title Sứ mệnh
+            p.cd-vmv2-text
+              | Phát triển sản phẩm probiotics 
+              b chất lượng – an toàn – dễ sử dụng
+              | , liên tục cải tiến dựa trên trải nghiệm người dùng.
+           
+
+block pageScripts
+  script(src="assets/js/custom.js")

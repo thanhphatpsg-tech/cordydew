@@ -1,0 +1,176 @@
+/* =========================
+   CordyDew Products Page v2
+   ========================= */
+
+.cd-hero .cd-hero-actions{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cd-ghost-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.45);
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  transition: all .2s ease;
+  font-weight: 600;
+}
+.cd-ghost-btn:hover{
+  background: rgba(255,255,255,.16);
+  color: #fff;
+}
+
+/* Section title */
+.cd-section-title h2{
+  margin-bottom: 10px;
+}
+.cd-section-title p{
+  opacity: .9;
+  margin-bottom: 0;
+}
+
+/* Intro */
+.cd-intro{
+  /* background: #fff; */
+}
+
+.cd-vcard{
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cd-vcard:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.10);
+}
+.cd-vcard-media{
+  padding: 14px 14px 0 14px;
+}
+.cd-vcard-imgholder{
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0,0,0,.06), rgba(0,0,0,.02));
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0,0,0,.45);
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.cd-vcard-body{
+  padding: 16px 18px 18px 18px;
+}
+.cd-vcard-body h5{
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.cd-ul{
+  margin: 0;
+  padding-left: 18px;
+}
+.cd-ul li{
+  margin: 6px 0;
+}
+
+/* Intro CTA bar */
+.cd-intro-cta{
+  background: #5C3A87;
+  color: #fff;
+  border-radius: 18px;
+  padding: 18px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  box-shadow: 0 12px 32px rgba(0,0,0,.18);
+}
+.cd-intro-cta-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Product: split block */
+.pd-card .pd-subtitle{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  opacity: .8;
+  margin-bottom: 10px;
+}
+.pd-split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+.pd-fit{
+  margin-top: 8px;
+  opacity: .95;
+}
+
+/* Ingredients unified box */
+.pd-ingredients{
+  border: 1px solid rgba(0,0,0,.08);
+  background: rgba(0,0,0,.02);
+  border-radius: 14px;
+  padding: 12px;
+}
+.pd-ing{
+  padding: 10px 8px;
+  border-bottom: 1px dashed rgba(0,0,0,.12);
+}
+.pd-ing:last-child{
+  border-bottom: 0;
+}
+.pd-ing-title{
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.pd-ing-text{
+  font-size: 14px;
+  opacity: .9;
+  line-height: 1.5;
+}
+
+/* Bottom CTA */
+.cd-bottom-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px){
+  .pd-split{
+    grid-template-columns: 1fr;
+  }
+  .cd-bottom-actions{
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px){
+  .cd-vcard-imgholder{
+    height: 140px;
+  }
+}
+.img-product{
+    max-height: 480px;
+    min-height: 480px;
+    width: 100%;
+}

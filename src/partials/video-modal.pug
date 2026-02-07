@@ -1,0 +1,13 @@
+.video-modal#videoModal(aria-hidden="true")
+  .video-backdrop(data-video-close)
+  .video-dialog(role="dialog" aria-modal="true")
+    button.video-close(type="button" data-video-close) &times;
+    .video-wrap
+      iframe#videoFrame(
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      )

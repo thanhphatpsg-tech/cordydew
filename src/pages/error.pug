@@ -1,0 +1,67 @@
+extends ../layouts/default.pug
+
+block vars
+  - var activePage = ''
+
+block headLinks
+
+block content
+  // BANNER
+  section.banner-section.pt-200.pb-175
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            h1 Opps!! Page Not Found
+
+  // ERROR SECTION
+  section.error-section.another-page.pt-75.pb-30
+    .container
+      .row.justify-content-center
+        .col-12.text-center
+          .error-text
+            h1 404
+            h2 Opps!! Looks like something went wrong
+
+          .home-or-search
+            a.btn-bg(href="index.html") Go Home
+            span.or Or
+
+            .search-box
+              form(method="post" action="contact.html")
+                .form-group
+                  input(
+                    type="search"
+                    name="search-field"
+                    value=""
+                    placeholder="Search"
+                    required
+                  )
+                  button(type="submit")
+                    span.icon.fa.fa-search
+
+  // PARTNERS
+  section.partners-section
+    .container
+      .partner-carousel.owl-carousel
+
+        each logo in ['google', 'microsoft', 'slack', 'asana', 'airbnb']
+          .item
+            a(href="#")
+              img(src=`assets/img/clients/${logo}.png` alt="Awesome Image")
+              img(src=`assets/img/clients/${logo}-color.png` alt="Awesome Image")
+
+      // CTA newsletter
+      .cta-action-style-two.cta-action-form
+        .row.align-items-center
+          .col-lg-6.text-lg-left.text-center
+            h4.cta-title Subscribe to Our Newsletter
+            p.cta-text Stay in touch with us to get latest news and discount coupons
+
+          .col-lg-6.d-flex.justify-content-lg-end.justify-content-center.py-20
+            form.subscribe-form
+              .form-group
+                input(type="email" placeholder="Your Email")
+                button(type="submit" class="flaticon-paper-plane")
+
+block pageScripts

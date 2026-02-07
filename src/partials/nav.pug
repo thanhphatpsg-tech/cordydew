@@ -1,0 +1,7 @@
+mixin navItem(href, label, key, hasDropdown = false)
+  -
+    const classes = [];
+    if (hasDropdown) classes.push('dropdown');
+    if (typeof activePage !== 'undefined' && activePage === key) classes.push('current');
+  li(class=classes.join(' '))
+    a(href=href)= label

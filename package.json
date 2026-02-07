@@ -1,0 +1,13 @@
+{
+  "name": "cordydew-pug",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/scripts/build.js",
+    "watch": "node src/scripts/build.js --watch"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "pug": "^3.0.3"
+  }
+}

@@ -1,0 +1,154 @@
+extends ../layouts/default.pug
+
+block vars
+  - var activePage = 'contact'
+
+block headLinks
+  link(rel="stylesheet" href="assets/css/contact-cordydew.css")
+
+block content
+  // TOAST (đặt trong body)
+  #cdToast.cd-toast(aria-live="polite" aria-atomic="true")
+    #cdToastIcon.cd-toast__icon ✓
+    #cdToastText.cd-toast__text ...
+
+  // BANNER
+  section.banner-section.pt-200.pb-175
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            h1 Gửi tin nhắn cho chúng mình
+            p.cd-page-sub.text-white
+              | Nếu bạn cần tư vấn sản phẩm, hợp tác truyền thông, hoặc góp ý trải nghiệm CordyDew — hãy
+              |  để lại thông tin, tụi mình sẽ liên hệ sớm.
+
+  // CONTACT
+  section.cd-contact.another-page.pb-90
+    .container
+      .row.align-items-stretch
+        // Form
+        .col-lg-7.mb-30
+          .cd-contact-card.cd-form-card
+            .cd-card-head
+              .cd-icon
+                i.fa.fa-paper-plane
+              div
+                h4.mb-5 Liên hệ nhanh
+                p.mb-0 Điền form bên dưới, CordyDew sẽ phản hồi qua email/điện thoại.
+
+            form#contact-form.cd-form(method="POST" action="sendmail.php")
+              .row
+                .col-md-6
+                  .form-group
+                    label Họ và tên
+                    input(type="text" name="username" placeholder="Ví dụ: Nguyễn Văn A" required)
+
+                .col-md-6
+                  .form-group
+                    label Email
+                    input(type="email" name="email" placeholder="example@email.com" required)
+
+                .col-md-6
+                  .form-group
+                    label Số điện thoại (tuỳ chọn)
+                    input(type="text" name="phone" placeholder="09xx xxx xxx")
+
+                .col-md-6
+                  .form-group
+                    label Chủ đề
+                    select(name="subject")
+                      option(value="Tu van") Tư vấn sản phẩm
+                      option(value="Hop tac") Hợp tác / Truyền thông
+                      option(value="Gop y") Góp ý trải nghiệm
+                      option(value="Khac") Khác
+
+                .col-md-12
+                  .form-group
+                    label Nội dung
+                    textarea(name="message" rows="5" placeholder="Bạn cần CordyDew hỗ trợ gì?")
+
+                .col-md-12
+                  .checking.cd-check
+                    input#check(type="checkbox" name="check" required)
+                    label(for="check")
+                      | Tôi đồng ý với
+                      a(href="#" onclick="return false;")  Điều khoản
+                      |  và
+                      a(href="#" onclick="return false;")  Chính sách bảo mật
+                      | .
+
+                .col-md-12
+                  input#form_botcheck.form-control(type="hidden" name="form_botcheck" value="")
+                  button.btn-bg.cd-btn(type="submit" data-loading-text="Please wait...")
+                    | GỬI TIN NHẮN
+                    i.fa.fa-arrow-right
+                  .cd-hint * Thời gian phản hồi dự kiến: 24–48h (giờ hành chính).
+
+        // Info
+        .col-lg-5.mb-30
+          .cd-contact-card.cd-info-card.mb-20
+            .cd-card-head
+              .cd-icon
+                i.fa.fa-comments
+              div
+                h4.mb-5 Kênh liên hệ
+                p.mb-0 Liên hệ qua các kênh bên dưới.
+
+            .cd-info-list
+              .cd-info-item
+                .cd-mini-ic
+                  i.fa.fa-map-marker
+                div
+                  .cd-info-title Địa chỉ
+                  .cd-info-text 140 lê trọng tấn, tân phú, hồ chí minh
+
+              .cd-info-item
+                .cd-mini-ic
+                  i.fa.fa-phone
+                div
+                  .cd-info-title Hotline
+                  .cd-info-text
+                    a(href="tel:+84909722620") 0909 722 620
+
+              .cd-info-item
+                .cd-mini-ic
+                  i.fa.fa-envelope
+                div
+                  .cd-info-title Email
+                  .cd-info-text
+                    a(href="mailto:contact@cordydew.vn") contact@cordydew.vn
+
+              .cd-info-item
+                .cd-mini-ic
+                  i.fa.fa-clock-o
+                div
+                  .cd-info-title Giờ làm việc
+                  .cd-info-text Thứ 2 – Thứ 6: 08:30 – 17:30
+
+            .cd-social
+              a(href="#" onclick="return false;" aria-label="Facebook")
+                i.fa.fa-facebook
+              a(href="#" onclick="return false;" aria-label="Instagram")
+                i.fa.fa-instagram
+              a(href="#" onclick="return false;" aria-label="TikTok")
+                i.fa.fa-music
+              a(href="#" onclick="return false;" aria-label="YouTube")
+                i.fa.fa-youtube-play
+
+      // Map full width
+      .cd-contact-card.cd-map-card
+        .cd-map
+          iframe(
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.4022972546877!2d106.62831348070395!3d10.806775143433816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1769679254723!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          )
+        .cd-map-bg
+
+block pageScripts
+  script(src="assets/js/contact.js")

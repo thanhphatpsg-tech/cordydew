@@ -1,0 +1,81 @@
+footer.footer.cd-research-footer
+  .container
+    .row
+      .col-md-5.mb-30
+        .footer-widget.logo-widget
+          .footer-logo
+            a(href="index.html")
+              img(src="assets/img/logo/footer-logo.png" alt="CordyDew")
+          .widget-content
+            .text
+              p
+                | CordyDew là dự án nghiên cứu & đổi mới sáng tạo trong lĩnh vực hỗ trợ hệ tiêu hóa,
+                | phát triển giải pháp probiotics tiện lợi, phù hợp nhịp sống hiện đại
+                | và hướng đến ứng dụng thực tiễn.
+            .cd-footer-badges
+              span.cd-badge-sm
+                i.fa.fa-flask
+                |  Nghiên cứu
+              span.cd-badge-sm
+                i.fa.fa-leaf
+                |  Công nghệ sinh học
+              span.cd-badge-sm
+                i.fa.fa-users
+                |  Nhóm phát triển
+
+      .col-md-4.mb-30
+        .footer-widget.links-widget
+          h5.footer-title Liên hệ
+          .widget-content
+            ul.list.cd-footer-list
+              li
+                i.fa.fa-envelope
+                span Email:
+                a(href=`mailto:${site.email}`)= site.email
+              li
+                i.fa.fa-phone
+                span Hotline / Zalo:
+                a(href=`tel:${site.phone}`)= site.phone
+              li
+                i.fa.fa-facebook-f
+                span Fanpage:
+                a(href="#" target="_blank" rel="noopener") CordyDew
+              li
+                i.fa.fa-instagram
+                span Instagram:
+                a(href="#" target="_blank" rel="noopener") @cordydew
+
+            .footer-social-icon.mt-15
+              ul.social-icon-one
+                li
+                  a(href="#" aria-label="Facebook")
+                    i.fa.fa-facebook-f
+                li
+                  a(href="#" aria-label="Instagram")
+                    i.fa.fa-instagram
+                li
+                  a(href=`tel:${site.phone}` aria-label="Zalo/Phone")
+                    i.fa.fa-phone
+
+      .col-md-3.mb-30
+        .footer-widget.links-widget
+          h5.footer-title Nhóm/Đơn vị nghiên cứu
+          .widget-content
+            .cd-research-box
+              .cd-research-row
+                i.fa.fa-university
+                div
+                  .cd-r-title Thông tin đơn vị
+                  .cd-r-text Nhóm nghiên cứu & phát triển CordyDew
+              .cd-research-row
+                i.fa.fa-map-marker
+                div
+                  .cd-r-title Địa điểm
+                  .cd-r-text= site.address
+              a.btn-bg.cd-footer-btn(href="contact.html") Kết nối hợp tác
+
+  .footer-bottom
+    .copyright
+      | © 
+      span#cdYear
+      |  CordyDew. All rights reserved.

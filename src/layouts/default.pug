@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    block vars
+    include ../partials/head.pug
+    block pageHead
+    block headLinks
+  body
+    .page-wrapper
+      .preloader
+
+      include ../partials/header.pug
+
+      block content
+
+      include ../partials/footer.pug
+
+      button.scroll-top.scroll-to-target(data-target="html")
+        span.fa.fa-angle-up
+
+    include ../partials/video-modal.pug
+    include ../partials/scripts.pug
+    block pageScripts
+  include ../partials/ldjson.pug
