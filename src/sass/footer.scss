@@ -1,0 +1,249 @@
+/* ===== Footer base ===== */
+.cd-research-footer {
+  padding: 56px 0 0;
+  background: #fff;
+  color: #4b4b4b;
+}
+
+.cd-research-footer .footer-title {
+  font-weight: 800;
+  letter-spacing: .4px;
+  margin-bottom: 14px;
+  color: #6b2a6b;
+  /* tím nhẹ */
+}
+
+/* Left text */
+.cd-research-footer .text p {
+  margin: 0 0 10px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* badges */
+.cd-footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.cd-badge-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #f6f1f7;
+  color: #6b2a6b;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cd-badge-sm i {
+  opacity: .9;
+}
+
+/* quick links */
+.cd-footer-quicklinks {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.cd-footer-quicklinks a {
+  color: #6b2a6b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cd-footer-quicklinks a:hover {
+  text-decoration: underline;
+}
+
+/* contact list */
+.cd-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.cd-footer-list li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.cd-footer-list i {
+  color: #6b2a6b;
+  margin-top: 3px;
+}
+
+.cd-item-label {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-bottom: 2px;
+}
+
+.cd-footer-list a {
+  color: #4b4b4b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cd-footer-list a:hover {
+  color: #6b2a6b;
+}
+
+/* research box right */
+.cd-research-box {
+  border: 1px solid #f0e6f2;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.cd-research-row {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.cd-research-row+.cd-research-row {
+  border-top: 1px dashed #f0e6f2;
+}
+
+.cd-research-row i {
+  color: #6b2a6b;
+  margin-top: 3px;
+}
+
+.cd-r-title {
+  font-weight: 800;
+  color: #6b2a6b;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.cd-r-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* CTA button */
+.cd-footer-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  background: #7b2b7b;
+  /* tím đậm */
+  color: #fff;
+}
+
+.cd-footer-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* bottom bar */
+.footer-bottom {
+  margin-top: 34px;
+  border-top: 1px solid #f0e6f2;
+  padding: 14px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cd-footer-note {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .cd-research-footer {
+    padding-top: 44px;
+  }
+}
+
+
+/* tăng khoảng cách icon ↔ text */
+.cd-contact-simple li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+/* icon */
+.cd-contact-simple i {
+  min-width: 16px;
+  /* giữ icon thẳng hàng */
+  text-align: center;
+  color: #6b2a6b;
+  font-size: 15px;
+}
+/* ===== Mobile: căn giữa cột LIÊN HỆ ===== */
+@media (max-width: 767px) {
+  /* căn giữa toàn bộ cột middle */
+  .cd-research-footer .links-widget {
+    text-align: center;
+  }
+
+  /* list contact */
+  .cd-contact-simple {
+    display: inline-block; /* để list gọn và nằm giữa */
+    text-align: left;      /* giữ icon + text thẳng hàng đẹp */
+    margin: 0 auto;
+  }
+
+  /* từng dòng contact */
+  .cd-contact-simple li {
+    justify-content: flex-start;
+  }
+
+  /* nút CTA */
+  .cd-footer-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* ===== Mobile: căn giữa cột LEFT ===== */
+@media (max-width: 767px) {
+  /* toàn bộ widget bên trái */
+  .cd-research-footer .logo-widget {
+    text-align: center;
+  }
+
+  /* đoạn mô tả */
+  .cd-research-footer .logo-widget .text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* badges nằm giữa */
+  .cd-footer-badges {
+    justify-content: center;
+  }
+
+  /* logo */
+  .footer-logo {
+    justify-content: center;
+  }
+}
