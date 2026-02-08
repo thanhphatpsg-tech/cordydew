@@ -1,49 +1,53 @@
+@charset "UTF-8";
 /* PROJECT CORDYDEW SECTION */
-.cd-project-title{
+.cd-project-title {
   text-align: center;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #7b2d8a; /* tím tiêu đề */
+  color: #7b2d8a;
+  /* tím tiêu đề */
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.cd-project-card{
-  background: #f6dcb7; /* nền be */
+.cd-project-card {
+  background: #f6dcb7;
+  /* nền be */
   border-radius: 14px;
   padding: 22px 22px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.cd-project-card h3{
+.cd-project-card h3 {
   margin: 0 0 10px;
   font-weight: 800;
   color: #111;
   text-align: center;
 }
 
-.cd-project-card p{
+.cd-project-card p {
   margin: 0;
   color: #111;
   line-height: 1.7;
   font-size: 15px;
 }
 
-.cd-project-card--big{
+.cd-project-card--big {
   padding: 26px 26px;
-}
-@media (max-width: 991px) {
-  .cd-project .row.g-4 {
-    --bs-gutter-y: 18px;   
-    --bs-gutter-x: 14px;   
-  }
 }
 
 @media (max-width: 991px) {
-  .cd-project .row.g-4 > [class*="col-"] {
+  .cd-project .row.g-4 {
+    --bs-gutter-y: 18px;
+    --bs-gutter-x: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .cd-project .row.g-4 > [class*=col-] {
     margin-bottom: 18px;
   }
-  .cd-project .row.g-4 > [class*="col-"]:last-child {
+
+  .cd-project .row.g-4 > [class*=col-]:last-child {
     margin-bottom: 0;
   }
 }
