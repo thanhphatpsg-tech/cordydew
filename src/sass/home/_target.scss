@@ -1,0 +1,97 @@
+
+/* ========================================== */
+/* =========================
+   CordyDew Target Customers (Scoped)
+========================= */
+#cordydew-target-sec.cd-target {
+  position: relative;
+  background: transparent;
+}
+
+
+#cordydew-target-sec .cd-target-title p {
+  opacity: .78;
+  line-height: 1.7;
+}
+
+/* reuse badge but scoped */
+#cordydew-target-sec .cd-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-size: 13px;
+  color: #6d28d9;
+  background: rgba(124, 58, 237, .10);
+  border: 1px solid rgba(124, 58, 237, .16);
+  margin-bottom: 10px;
+}
+
+/* cards */
+#cordydew-target-sec .cd-aud-card {
+  height: 100%;
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(124, 58, 237, .12);
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.08);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+#cordydew-target-sec .cd-aud-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 55px rgba(17, 24, 39, 0.12);
+  border-color: rgba(124, 58, 237, .20);
+}
+
+#cordydew-target-sec .cd-aud-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#cordydew-target-sec .cd-aud-ico {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, .16), rgba(124, 58, 237, .14));
+  border: 1px solid rgba(124, 58, 237, .16);
+}
+
+#cordydew-target-sec .cd-aud-card h5 {
+  margin: 0;
+  font-weight: 850;
+  font-size: 15.5px;
+  line-height: 1.25;
+}
+
+#cordydew-target-sec .cd-aud-card p {
+  margin: 0;
+  opacity: .82;
+  line-height: 1.65;
+  font-size: 13.5px;
+}
+
+#cordydew-target-sec .cd-aud-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#cordydew-target-sec .cd-pill {
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, .07);
+  border: 1px solid rgba(124, 58, 237, .14);
+  font-weight: 750;
+  opacity: .92;
+}
+
+
