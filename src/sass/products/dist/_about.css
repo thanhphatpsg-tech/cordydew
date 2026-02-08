@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* PROJECT CORDYDEW SECTION */
+.cd-project-title {
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #7b2d8a;
+  /* tím tiêu đề */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.cd-project-card {
+  background: #f6dcb7;
+  /* nền be */
+  border-radius: 14px;
+  padding: 22px 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cd-project-card h3 {
+  margin: 0 0 10px;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+}
+
+.cd-project-card p {
+  margin: 0;
+  color: #111;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.cd-project-card--big {
+  padding: 26px 26px;
+}
