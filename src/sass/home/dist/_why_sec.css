@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* ===== Why choose us ===== */
+.why-sec .section-title p {
+  color: rgba(75, 27, 59, 0.85);
+}
+
+/* ===== Why choose us ===== */
+.why-sec .section-title p {
+  color: rgba(75, 27, 59, 0.85);
+}
+
+/* Mindmap (desktop/tablet) */
+.mindmap {
+  position: relative;
+  min-height: 560px;
+  display: block;
+  --accent: #4b1b3b;
+  --line: rgba(75, 27, 59, .22);
+  --cardW: 300px;
+  --centerSize: 176px;
+  /* NEW: độ dài dây nối */
+  --conn: 140px;
+}
+
+/* ==========================================ben */
+.cd-benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cd-benefit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(75, 27, 59, 0.12);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  font-size: 15px;
+  color: rgba(75, 27, 59, 0.9);
+}
+
+.cd-check {
+  color: #4b1b3b;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+}
