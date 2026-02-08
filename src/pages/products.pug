@@ -7,150 +7,23 @@ block headLinks
   link(rel="stylesheet" href="assets/css/products-cordydew.css")
 
 block content
-  // BANNER
-  section.banner-section.pt-200.pb-175
-    .container
-      .row
-        .col-lg-12
-          .page-title.text-center
-            h1 Hai dòng sản phẩm nổi bật
-            p.cd-page-sub.text-white
-              | CordyDew tập trung trải nghiệm người dùng trẻ:
-              b  ngon – tiện – dễ duy trì mỗi ngày
-              | .
-              |  Hai sản phẩm dưới đây là hướng phát triển chủ đạo.
+  include ../includes/components/page-banner.pug
 
-  // PRODUCT 1
-  section.pd-product-block.pb-70
-    .container
-      .row.align-items-center
-        .col-lg-6.mb-30
-          .pd-visual
-            img(src="assets/img/home-seven/g2.png" alt="Thạch probiotics CordyDew")
-            .pd-blob
-            .pd-dots
-            span.pd-chip Thạch probiotics
+  +pageBanner({
+    title: 'Hai dòng sản phẩm nổi bật',
+    subtitleParts: [
+      { type: 'text', value: 'CordyDew tập trung trải nghiệm người dùng trẻ: ' },
+      { type: 'bold', value: 'ngon – tiện – dễ duy trì mỗi ngày' },
+      { type: 'text', value: '. Hai sản phẩm dưới đây là hướng phát triển chủ đạo.' }
+    ],
+    pt: 'pt-200',
+    pb: 'pb-175',
+    subtitleClass: 'cd-page-sub text-white'
+  })
 
-        .col-lg-6.mb-30
-          .pd-card.pd-soft
-            span.pd-badge CordyDew
-            h3.pd-title Thạch probiotics CordyDew
-            p.pd-desc
-              | CordyDew là
-              b  thạch sữa chua probiotics
-              |  kết hợp
-              b  khoai lang tím
-              |  và
-              b  đông trùng hạ thảo
-              | ,
-              |  mang trải nghiệm dinh dưỡng tiện lợi, dễ sử dụng mỗi ngày.
-
-            .pd-feature-list
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-balance-scale
-                div
-                  h6 Hỗ trợ cân bằng hệ vi sinh đường ruột
-                  p Probiotics giúp duy trì hệ tiêu hóa khỏe mạnh theo thói quen hằng ngày.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-leaf
-                div
-                  h6 Bổ sung chất xơ tự nhiên từ khoai lang
-                  p Hỗ trợ tiêu hóa, tạo trải nghiệm “ăn vặt lành mạnh”.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-star
-                div
-                  h6 Tăng giá trị dinh dưỡng nhờ đông trùng hạ thảo
-                  p Định vị sản phẩm sáng tạo & giàu giá trị dinh dưỡng.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-spoon
-                div
-                  h6 Dạng thạch mềm – tiện lợi – dễ ăn
-                  p Phù hợp nhiều độ tuổi, đặc biệt người bận rộn.
-
-            .pd-cta.mt-25
-              a.btn-bg.pd-btn(href="contact.html")
-                | Nhận tư vấn / mẫu thử
-                i.fa.fa-arrow-right
-              a.pd-link(href="#!" onclick="return false;") Tải brochure (PDF)
-
-  // PRODUCT 2
-  section.pd-product-block.pb-90
-    .container
-      .row.align-items-center
-        .col-lg-6.mb-30.order-lg-2
-          .pd-visual.pd-visual-alt
-            img(src="assets/img/home-seven/g3.png" alt="Sữa chua sấy YoZen")
-            .pd-blob
-            .pd-dots
-            span.pd-chip Snack sấy thăng hoa
-
-        .col-lg-6.mb-30.order-lg-1
-          .pd-card
-            span.pd-badge.pd-badge-2 YoZen
-            h3.pd-title Sữa chua sấy YoZen
-            p.pd-desc
-              | YoZen là
-              b  snack sữa chua giòn xốp
-              | , kết hợp probiotics, khoai lang và đông trùng hạ thảo,
-              |  ứng dụng
-              b  công nghệ sấy thăng hoa
-              |  giúp giữ trọn hương vị và dinh dưỡng.
-
-            .pd-feature-list
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-balance-scale
-                div
-                  h6 Hỗ trợ cân bằng hệ vi sinh đường ruột
-                  p Probiotics phù hợp người thích snack nhưng vẫn muốn “healthy”.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-leaf
-                div
-                  h6 Bổ sung chất xơ tự nhiên từ khoai lang
-                  p Giúp đa dạng trải nghiệm vị và giá trị dinh dưỡng.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-star
-                div
-                  h6 Tăng giá trị dinh dưỡng nhờ đông trùng hạ thảo
-                  p Khác biệt hoá sản phẩm so với snack phổ thông.
-
-              .pd-feature
-                .pd-ic
-                  i.fa.fa-archive
-                div
-                  h6 Dạng khô giòn – dễ bảo quản – tiện dùng
-                  p Phù hợp mang theo, dùng ở trường/làm việc/du lịch.
-
-            .pd-cta.mt-25
-              a.btn-bg.pd-btn(href="contact.html")
-                | Nhận tư vấn / hợp tác
-                i.fa.fa-arrow-right
-              a.pd-link(href="#!" onclick="return false;") Tải brochure (PDF)
-
-  // BOTTOM CTA
-  section.pd-bottom.pt-70.pb-70
-    .container
-      .row.justify-content-center
-        .col-lg-10
-          .pd-bottom-card
-            div
-              h3 Bạn muốn nhận mẫu thử hoặc hợp tác?
-              p.mb-0
-                | Kết nối CordyDew để nhận thông tin chi tiết, thông số sản phẩm và lộ trình phát triển.
-            a.btn-bg.pd-btn(href="contact.html")
-              | Liên hệ ngay
-              i.fa.fa-arrow-right
+  include ../includes/sections/products-about.pug
+  include ../includes/sections/products-product-1.pug
+  include ../includes/sections/products-product-2.pug
+  include ../includes/sections/products-bottom-cta.pug
 
 block pageScripts
-

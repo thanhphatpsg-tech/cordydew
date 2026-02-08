@@ -1,0 +1,227 @@
+
+/* =========================
+   CordyDew Benefits Section (Scoped)
+========================= */
+
+#cordydew-benefits-sec.cordydew-benefits {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(124, 58, 237, .10), transparent 55%),
+    radial-gradient(900px 500px at 90% 30%, rgba(236, 72, 153, .10), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(250, 250, 255, 1));
+}
+
+
+#cordydew-benefits-sec .cd-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #6d28d9;
+  background: rgba(124, 58, 237, .10);
+  border: 1px solid rgba(124, 58, 237, .16);
+  margin-bottom: 10px;
+}
+
+/* Left media */
+#cordydew-benefits-sec .cd-media {
+  position: relative;
+  border-radius: 22px;
+  padding: 26px;
+  background: rgba(255, 255, 255, .75);
+  border: 1px solid rgba(124, 58, 237, .12);
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.08);
+}
+
+#cordydew-benefits-sec .cd-media-bg {
+  position: absolute;
+  inset: -30px;
+  border-radius: 26px;
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, .18), transparent 60%),
+    radial-gradient(circle at 70% 60%, rgba(124, 58, 237, .18), transparent 62%);
+  filter: blur(8px);
+  z-index: 0;
+}
+
+#cordydew-benefits-sec .cd-media-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+/* Floating badges */
+#cordydew-benefits-sec .cd-float {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .90);
+  border: 1px solid rgba(17, 24, 39, .10);
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.10);
+  backdrop-filter: blur(8px);
+}
+
+#cordydew-benefits-sec .cd-float-1 {
+  left: 16px;
+  bottom: 18px;
+}
+
+#cordydew-benefits-sec .cd-float-2 {
+  right: 16px;
+  top: 18px;
+}
+
+#cordydew-benefits-sec .cd-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #7c3aed, #ec4899);
+}
+
+#cordydew-benefits-sec .cd-float-title {
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+#cordydew-benefits-sec .cd-float-desc {
+  font-size: 12px;
+  opacity: .75;
+}
+
+/* Right cards */
+#cordydew-benefits-sec .cd-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#cordydew-benefits-sec .cd-card {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .80);
+  border: 1px solid rgba(124, 58, 237, .12);
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.08);
+  padding: 16px 16px 14px;
+}
+
+#cordydew-benefits-sec .cd-card-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+#cordydew-benefits-sec .cd-ico {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(124, 58, 237, .14), rgba(236, 72, 153, .10));
+  border: 1px solid rgba(124, 58, 237, .16);
+  font-size: 18px;
+}
+
+#cordydew-benefits-sec .cd-card h4 {
+  margin: 0 0 4px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#cordydew-benefits-sec .cd-card p {
+  margin: 0;
+  font-size: 13px;
+  opacity: .78;
+}
+
+/* list */
+#cordydew-benefits-sec .cd-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#cordydew-benefits-sec .cd-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 10px;
+  border-radius: 14px;
+  background: rgba(124, 58, 237, .05);
+  border: 1px solid rgba(124, 58, 237, .10);
+}
+
+#cordydew-benefits-sec .cd-check {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6d28d9;
+  background: rgba(124, 58, 237, .14);
+  border: 1px solid rgba(124, 58, 237, .18);
+  font-weight: 900;
+  margin-top: 1px;
+}
+
+#cordydew-benefits-sec .cd-sub {
+  font-size: 13px;
+  opacity: .78;
+  margin-top: 3px;
+}
+
+#cordydew-benefits-sec .cd-text {
+  font-size: 13.5px;
+  opacity: .85;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+/* tags */
+#cordydew-benefits-sec .cd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#cordydew-benefits-sec .cd-tag {
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, .08);
+  border: 1px solid rgba(236, 72, 153, .14);
+  font-weight: 700;
+}
+
+/* mobile */
+@media (max-width: 991px) {
+  #cordydew-benefits-sec .cd-float-2 {
+    right: 12px;
+    top: 12px;
+  }
+
+  #cordydew-benefits-sec .cd-float-1 {
+    left: 12px;
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #cordydew-benefits-sec .cd-ico {
+    display: none;
+  }
+}
+
