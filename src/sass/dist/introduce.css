@@ -447,3 +447,108 @@
 .cd-project-card--big {
   padding: 26px 26px;
 }
+
+/* ===== Product Highlight ===== */
+.cd-product-highlight .cd-ph-title {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #7b2d8a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cd-ph-card {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.cd-ph-left {
+  padding: 34px 34px;
+  background: #f2d7b6;
+  /* nền be */
+}
+
+.cd-ph-brand {
+  font-weight: 900;
+  color: #6a1f73;
+  margin: 0 0 14px;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.cd-ph-list {
+  margin: 0 0 22px;
+  padding-left: 18px;
+  color: #111;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.cd-ph-list li {
+  margin: 8px 0;
+}
+
+.cd-ph-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.cd-ph-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.cd-ph-btn--primary {
+  background: #f07b25;
+  color: #fff;
+  border-color: #d35f0d;
+}
+
+.cd-ph-btn--secondary {
+  background: #7b2d8a;
+  color: #fff;
+  border-color: #6a1f73;
+}
+
+.cd-ph-right {
+  background: #0b0f14;
+  /* nền tối phía ảnh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.cd-ph-img {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-ph-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-ph-brand {
+    font-size: 38px;
+  }
+
+  .cd-ph-img {
+    max-height: 280px;
+  }
+}
