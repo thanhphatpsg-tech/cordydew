@@ -1,0 +1,48 @@
+/* ===== Quality Testing ===== */
+.cd-quality-title {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #7b2d8a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cd-qcard {
+  text-align: center;
+}
+
+.cd-qcard-media {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cd-qcard-img {
+  width: 100%;
+  height: 290px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.cd-qcard-title {
+  margin: 18px 0 8px;
+  font-weight: 800;
+  color: #111;
+}
+
+.cd-qcard-desc {
+  margin: 0 auto;
+  max-width: 320px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-qcard-img {
+    height: 240px;
+  }
+}
