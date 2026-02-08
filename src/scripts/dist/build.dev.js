@@ -122,7 +122,10 @@ function buildPug() {
 
   var siteDataPath = _path["default"].join(SRC, "data", "site.json");
 
+  var footerDataPath = _path["default"].join(SRC, "data", "footer.json");
+
   var site = _fs["default"].existsSync(siteDataPath) ? loadJson(siteDataPath) : {};
+  var footer = _fs["default"].existsSync(footerDataPath) ? loadJson(footerDataPath) : {};
   if (!_fs["default"].existsSync(PAGES)) return;
 
   var files = _fs["default"].readdirSync(PAGES).filter(function (f) {
@@ -143,7 +146,8 @@ function buildPug() {
 
       var html = _pug["default"].renderFile(inFile, {
         pretty: true,
-        site: site
+        site: site,
+        footer: footer
       });
 
       _fs["default"].writeFileSync(outFile, html, "utf-8");
