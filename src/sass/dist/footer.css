@@ -249,3 +249,7 @@
     justify-content: center;
   }
 }
+.cd-research-text .cd-address {
+  white-space: pre-line;
+  /* hoặc pre-wrap */
+}
