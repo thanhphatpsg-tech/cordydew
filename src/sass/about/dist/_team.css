@@ -1,0 +1,448 @@
+@charset "UTF-8";
+/* =========================
+   CordyDew Team (owl cards)
+========================= */
+.cd-team .cd-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #5b21b6;
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.18);
+  margin-bottom: 10px;
+}
+
+/* Card */
+.cd-team .cd-member {
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  transition: 0.25s ease;
+  min-height: 445px;
+}
+
+.cd-team .cd-member:hover {
+  transform: translateY(-6px);
+}
+
+/* Thumb (placeholder background) */
+.cd-team .cd-thumb {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* overlay mềm */
+.cd-team .cd-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Info */
+.cd-team .team-info {
+  padding: 18px 18px 20px;
+}
+
+.cd-team .team-info h5 {
+  margin: 10px 0 6px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.cd-team .team-info h6 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: rgba(15, 23, 42, 0.7);
+  font-size: 14px;
+}
+
+.cd-team .cd-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cd-team .cd-meta li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: rgba(15, 23, 42, 0.82);
+  font-size: 14px;
+}
+
+.cd-team .cd-meta li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(124, 58, 237, 0.85);
+}
+
+/* Tag */
+.cd-team .cd-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(15, 23, 42, 0.03);
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.cd-team .cd-tag--expert {
+  background: rgba(236, 72, 153, 0.1);
+  border-color: rgba(236, 72, 153, 0.18);
+  color: #9d174d;
+}
+
+.cd-team .cd-tag--market {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.18);
+  color: #166534;
+}
+
+.cd-team .cd-tag--rnd {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: rgba(124, 58, 237, 0.18);
+  color: #5b21b6;
+}
+
+.cd-team .cd-tag--biz {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.18);
+  color: #1d4ed8;
+}
+
+.cd-team .cd-tag--mkt {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.22);
+  color: #92400e;
+}
+
+.cd-team .cd-tag--sales {
+  background: rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.18);
+  color: #115e59;
+}
+
+.cd-team .cd-tag--digital {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.18);
+  color: #3730a3;
+}
+
+/* Thumb background placeholders (đổi ảnh thật sau) */
+.cd-team .thumb-luan {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-dieu {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-thao {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-ngoc {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-giang {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-huy {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+.cd-team .thumb-phat {
+  background-image: url(../img/home-seven/team-1.png);
+}
+
+/* =========================
+   Brand Direction - Arch Cards
+========================= */
+.cd-arches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.cd-arch-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  box-shadow: 0 18px 45px rgba(16, 24, 40, 0.08);
+  overflow: hidden;
+  transition: 0.25s ease;
+  min-height: 320px;
+}
+
+.cd-arch-card:hover {
+  transform: translateY(-6px);
+}
+
+.cd-arch-top {
+  position: relative;
+  padding: 18px 18px 34px;
+  background: radial-gradient(circle at 50% -40px, rgba(124, 58, 237, 0.22), rgba(124, 58, 237, 0) 60%), radial-gradient(circle at 80% 0px, rgba(236, 72, 153, 0.18), rgba(236, 72, 153, 0) 58%), #A78EC7;
+  color: #fff;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  text-align: center;
+}
+
+.cd-arch-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cd-arch-icon i {
+  font-size: 20px;
+}
+
+.cd-arch-title {
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.cd-arch-body {
+  padding: 18px 18px 20px;
+  color: rgba(15, 23, 42, 0.86);
+}
+
+.cd-arch-quote {
+  font-weight: 900;
+  font-size: 16px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.cd-arch-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cd-arch-list li {
+  margin: 8px 0;
+}
+
+.cd-arch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cd-arch-tags span {
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.18);
+  color: #5b21b6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-arches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .cd-arches {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-arch-card {
+    min-height: auto;
+  }
+}
+.cd-arch-values {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cd-arch-values li {
+  margin: 10px 0;
+  line-height: 1.65;
+  color: rgba(15, 23, 42, 0.86);
+}
+
+.cd-arch-values b {
+  color: #0f172a;
+}
+
+/* =========================
+   Story Hero (New)
+========================= */
+.cd-story-card {
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.06), rgba(236, 72, 153, 0.04));
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 22px;
+  padding: 26px 24px;
+  box-shadow: 0 18px 45px rgba(16, 24, 40, 0.08);
+}
+
+.cd-story-head {
+  padding-bottom: 16px;
+  border-bottom: 1px dashed rgba(15, 23, 42, 0.1);
+}
+
+.cd-story-lead {
+  opacity: 0.88;
+  line-height: 1.7;
+}
+
+.cd-story-points {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cd-point {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 16px;
+  padding: 14px 14px;
+}
+
+.cd-point-ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.16);
+  flex: 0 0 40px;
+}
+
+.cd-point-ic i {
+  font-size: 16px;
+  color: #5b21b6;
+}
+
+.cd-point-title {
+  font-weight: 900;
+  margin-bottom: 3px;
+  color: #0f172a;
+}
+
+.cd-point-text {
+  color: rgba(15, 23, 42, 0.84);
+  line-height: 1.65;
+}
+
+.cd-story-quote {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(124, 58, 237, 0.14);
+}
+
+.cd-story-highlights {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cd-hl {
+  flex: 1 1 140px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.cd-hl-k {
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.65;
+  margin-bottom: 2px;
+}
+
+.cd-hl-v {
+  font-weight: 900;
+  color: #0f172a;
+}
+
+/* Visual chips */
+.cd-story-visual {
+  position: relative;
+}
+
+.cd-float-chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 18px 45px rgba(16, 24, 40, 0.1);
+  font-weight: 800;
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.88);
+  z-index: 5;
+  backdrop-filter: blur(6px);
+}
+
+.cd-float-chip i {
+  color: #5b21b6;
+}
+
+.cd-float-chip.chip-1 {
+  left: 16px;
+  top: 18px;
+}
+
+.cd-float-chip.chip-2 {
+  right: 16px;
+  top: 54px;
+}
+
+.cd-float-chip.chip-3 {
+  left: 18px;
+  bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-float-chip.chip-2 {
+    right: 12px;
+    top: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .cd-story-card {
+    padding: 22px 18px;
+  }
+
+  .cd-float-chip {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+}
