@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* ===== Production Process ===== */
+.cd-process-title {
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #7b2d8a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cd-process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cd-process-item {
+  background: #f2d7b6;
+  /* nền be */
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.cd-process-text {
+  color: #111;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cd-process-text b {
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-process-text {
+    font-size: 16px;
+  }
+}
