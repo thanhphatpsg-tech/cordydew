@@ -1,0 +1,146 @@
+/* =========================
+   BENEFITS & FEATURES (Những điều thú vị về CORDYDEW)
+========================= */
+
+.cordydew-benefits-features {
+    padding: 70px 0 80px;
+    background: #ffffff;
+}
+
+.cordydew-benefits-features .benefits-header {
+    margin-bottom: 52px;
+}
+
+.cordydew-benefits-features .benefits-title {
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    font-size: clamp(28px, 3.2vw, 44px);
+    line-height: 1.15;
+    color: #7b2a7b; /* tím */
+    text-align: center;
+}
+
+/* Layout 2 columns: media + cards */
+.cordydew-benefits-features .benefits-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: center;
+}
+
+/* Left side: Product image */
+.cordydew-benefits-features .benefits-media {
+    position: relative;
+}
+
+.cordydew-benefits-features .benefits-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side: Cards grid 2x2 */
+.cordydew-benefits-features .benefits-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.cordydew-benefits-features .benefit-card {
+    background: #f5e6d3; /* Beige color similar to image */
+    border-radius: 16px;
+    padding: 22px 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.cordydew-benefits-features .benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cordydew-benefits-features .card-title {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.35;
+    color: #111111;
+}
+
+.cordydew-benefits-features .card-text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cordydew-benefits-features .benefits-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.cordydew-benefits-features .benefits-list li {
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cordydew-benefits-features .benefits-list .arrow {
+    color: #7b2a7b;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .cordydew-benefits-features {
+        padding: 52px 0 60px;
+    }
+
+    .cordydew-benefits-features .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .cordydew-benefits-features .benefits-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .cordydew-benefits-features .benefit-card {
+        padding: 18px 16px;
+    }
+
+    .cordydew-benefits-features .card-title {
+        font-size: 14px;
+    }
+
+    .cordydew-benefits-features .card-text,
+    .cordydew-benefits-features .benefits-list li {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .cordydew-benefits-features {
+        padding: 40px 0 48px;
+    }
+
+    .cordydew-benefits-features .benefits-title {
+        font-size: 24px;
+    }
+
+    .cordydew-benefits-features .benefits-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cordydew-benefits-features .benefit-card {
+        padding: 16px 14px;
+    }
+}
