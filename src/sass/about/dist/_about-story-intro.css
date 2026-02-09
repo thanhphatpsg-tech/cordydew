@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* STORY */
+.cd-story {
+  position: relative;
+}
+
+.cd-story-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 34px 34px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(75, 27, 59, 0.1);
+}
+
+.cd-story-head {
+  position: sticky;
+  top: 18px;
+}
+
+.cd-story-title {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 40px;
+  color: #6f2f5e;
+  /* tím hồng kiểu CordyDew */
+}
+
+.cd-story-accent {
+  margin-top: 14px;
+  width: 92px;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b4558b 0%, #f0a7c9 100%);
+  opacity: 0.95;
+}
+
+.cd-story-body {
+  padding-top: 6px;
+}
+
+.cd-story-body p {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.cd-story-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional note */
+.cd-story-note {
+  display: inline-block;
+  margin-top: 18px;
+  font-weight: 700;
+  color: rgba(111, 47, 94, 0.92);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .cd-story-card {
+    padding: 24px 18px;
+  }
+
+  .cd-story-head {
+    position: static;
+  }
+
+  .cd-story-title {
+    font-size: 30px;
+  }
+}
