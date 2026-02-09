@@ -7,5 +7,80 @@
   "url": "https://www.cordydew.website",
   "email": "contact@cordydew.vn",
   "phone": "0909722620",
-  "address": "140 Lê Trọng Tấn, Tân Phú, Hồ Chí Minh"
+  "address": "140 Lê Trọng Tấn, Tân Phú, Hồ Chí Minh",
+  "team_section": {
+    "title": "Đội ngũ cố vấn & phát triển",
+    "lead": "Hội tụ chuyên môn vi sinh – thị trường – R&D để phát triển CordyDew theo hướng chất lượng và bền vững.",
+    "members": [
+      {
+        "key": "luan",
+        "tag": { "text": "Cố vấn chuyên môn", "variant": "expert" },
+        "name": "ThS. Nguyễn Thành Luân",
+        "role": "Giảng viên – Trường Đại học Công Thương TP. Hồ Chí Minh",
+        "meta": [
+          { "label": "Chuyên môn", "value": "Vi sinh & Sinh học phân tử" }
+        ]
+      },
+      {
+        "key": "dieu",
+        "tag": { "text": "Cố vấn thị trường", "variant": "market" },
+        "name": "Ông Lê Xuân Diệu",
+        "role": "Giám đốc – Công ty TNHH Nông nghiệp VACO (Vacofarm)",
+        "meta": [
+          { "label": "Lĩnh vực", "value": "Nông nghiệp" }
+        ]
+      },
+      {
+        "key": "thao",
+        "tag": { "text": "R&D", "variant": "rnd" },
+        "name": "Nguyễn Hồ Thiên Thảo",
+        "role": "Trưởng nhóm – Nghiên cứu & Phát triển",
+        "meta": [
+          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
+          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+        ]
+      },
+      {
+        "key": "ngoc",
+        "tag": { "text": "Business", "variant": "biz" },
+        "name": "Nguyễn Thị Ngọc",
+        "role": "Tài chính & Mô hình kinh doanh",
+        "meta": [
+          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
+          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+        ]
+      },
+      {
+        "key": "giang",
+        "tag": { "text": "Marketing", "variant": "mkt" },
+        "name": "Nguyễn Hương Giang",
+        "role": "Marketing & Phát triển thị trường",
+        "meta": [
+          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
+          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+        ]
+      },
+      {
+        "key": "huy",
+        "tag": { "text": "Field", "variant": "sales" },
+        "name": "Cao Ngọc Lê Huy",
+        "role": "Tiếp thị & Khảo sát thị trường",
+        "meta": [
+          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
+          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+        ]
+      },
+      {
+        "key": "phat",
+        "tag": { "text": "Digital", "variant": "digital" },
+        "name": "Nguyễn Thành Phát",
+        "role": "Truyền thông số",
+        "meta": [
+          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
+          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+        ]
+      }
+    ]
+  }
+
 }
