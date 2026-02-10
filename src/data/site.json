@@ -10,77 +10,72 @@
   "address": "140 Lê Trọng Tấn, Tân Phú, Hồ Chí Minh",
   "team_section": {
     "title": "Đội ngũ cố vấn & phát triển",
-    "lead": "Hội tụ chuyên môn vi sinh – thị trường – R&D để phát triển CordyDew theo hướng chất lượng và bền vững.",
+    "lead": "Kết nối chuyên môn vi sinh, nghiên cứu & phát triển, cùng định hướng chiến lược nhằm nâng cao chất lượng và khả năng ứng dụng của CordyDew.",
     "members": [
       {
         "key": "luan",
         "tag": { "text": "Cố vấn chuyên môn", "variant": "expert" },
-        "name": "ThS. Nguyễn Thành Luân",
+        "name": "ThS. NGUYỄN THÀNH LUÂN",
         "role": "Giảng viên – Trường Đại học Công Thương TP. Hồ Chí Minh",
         "meta": [
-          { "label": "Chuyên môn", "value": "Vi sinh & Sinh học phân tử" }
+          { "label": "Chuyên ngành", "value": "Công nghệ sinh học vi sinh &  sinh học phân tử" },
+          { "label": "", "value": "Cố vấn khoa học nền tảng vi sinh định hướng quy trình thử nghiệm & đánh giá chất lượng sản phẩm" }
         ]
       },
       {
         "key": "dieu",
         "tag": { "text": "Cố vấn thị trường", "variant": "market" },
-        "name": "Ông Lê Xuân Diệu",
+        "name": "Ông LÊ XUÂN DIỆU",
         "role": "Giám đốc – Công ty TNHH Nông nghiệp VACO (Vacofarm)",
         "meta": [
-          { "label": "Lĩnh vực", "value": "Nông nghiệp" }
+          { "label": "", "value": "Cố vấn định hướng thị trường & ứng dụng thực tiễn kết nối sản phẩm với nhu cầu tiêu dùng và chuỗi giá trị nông nghiệp" }
         ]
       },
       {
         "key": "thao",
-        "tag": { "text": "R&D", "variant": "rnd" },
-        "name": "Nguyễn Hồ Thiên Thảo",
-        "role": "Trưởng nhóm – Nghiên cứu & Phát triển",
+        "tag": { "text": "NHÓM TRƯỞNG DỰ ÁN NGHIÊN CỨU & PHÁT TRIỂN", "variant": "rnd" },
+        "name": "NGUYỄN HỒ THIÊN THẢO",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
-          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
-          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+          { "label": "", "value": "Xây dựng công thức sản phẩm CordyDew. Thiết kế và tối ưu quy trình thử nghiệm. Đánh giá hiệu quả & trải nghiệm sản phẩm" }
         ]
       },
       {
         "key": "ngoc",
-        "tag": { "text": "Business", "variant": "biz" },
-        "name": "Nguyễn Thị Ngọc",
-        "role": "Tài chính & Mô hình kinh doanh",
+        "tag": { "text": "Tài chính & Mô hình kinh doanh", "variant": "biz" },
+        "name": "NGUYỄN THỊ NGỌC",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
-          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
-          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+          { "label": "", "value": "Phân tích chi phí – giá thành. Xây dựng mô hình kinh doanh & tính khả thi thị trường" }
         ]
       },
       {
         "key": "giang",
-        "tag": { "text": "Marketing", "variant": "mkt" },
-        "name": "Nguyễn Hương Giang",
-        "role": "Marketing & Phát triển thị trường",
+        "tag": { "text": "Tiếp thị & Phát triển thị trường", "variant": "mkt" },
+        "name": "NGUYỄN HƯƠNG GIANG",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
-          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
-          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+          { "label": "", "value": "Nghiên cứu hành vi người tiêu dùng. Xây dựng thông điệp & định vị sản phẩm" }
         ]
       },
       {
         "key": "huy",
-        "tag": { "text": "Field", "variant": "sales" },
-        "name": "Cao Ngọc Lê Huy",
-        "role": "Tiếp thị & Khảo sát thị trường",
+        "tag": { "text": "KHẢO SÁT NGƯỜI DÙNG & SẢN PHẨM", "variant": "sales" },
+        "name": "CAO NGỌC LÊ HUY",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
-          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
-          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+          { "label": "", "value": "Thiết kế khảo sát trải nghiệm sản phẩm. Thu thập & phân tích phản hồi người dùng" }
         ]
       },
       {
         "key": "phat",
-        "tag": { "text": "Digital", "variant": "digital" },
-        "name": "Nguyễn Thành Phát",
-        "role": "Truyền thông số",
+        "tag": { "text": "TRUYỀN THÔNG SỐ & NỘI DUNG", "variant": "digital" },
+        "name": "NGUYỄN THÀNH PHÁT",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
-          { "label": "Trường", "value": "Đại học Công Thương TP. Hồ Chí Minh" },
-          { "label": "Khoa", "value": "Sinh học & Môi trường" }
+          { "label": "", "value": "Xây dựng nội dung truyền thông số. Hỗ trợ hình ảnh thương hiệu & nền tảng online" }
         ]
       }
     ]
   }
-
 }
