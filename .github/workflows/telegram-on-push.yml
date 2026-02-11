@@ -12,7 +12,7 @@ jobs:
       - name: Send Telegram message
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.TELEGRAM_GROUP_ID }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID_V2 }}
         run: >
           REPO="${{ github.repository }}";
           BRANCH="${{ github.ref_name }}";
