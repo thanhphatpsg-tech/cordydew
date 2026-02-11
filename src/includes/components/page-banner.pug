@@ -10,7 +10,7 @@
 //-     ],
 //-     pt: 'pt-200',
 //-     pb: 'pb-175',
-//-     subtitleClass: 'cd-page-sub text-white'
+//-     subtitleClass: 'cd-page-sub '
 //-   })
 
 mixin pageBanner(opts)
@@ -20,7 +20,7 @@ mixin pageBanner(opts)
     const pb = o.pb || 'pb-175';
     const title = o.title || '';
     const subtitleParts = Array.isArray(o.subtitleParts) ? o.subtitleParts : [];
-    const subtitleClass = o.subtitleClass || 'cd-page-sub text-white';
+    const subtitleClass = o.subtitleClass || 'cd-page-sub ';
 
   section.banner-section(class=`${pt} ${pb}`)
     .container
