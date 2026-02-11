@@ -3,7 +3,7 @@ name: Notify Telegram (Private)
 on:
   push:
     branches:
-      - "**"
+      - main
 
 jobs:
   notify:
@@ -12,7 +12,7 @@ jobs:
       - name: Send Telegram message
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.TELEGRAM_ID }}
+          CHAT_ID: ${{ secrets.TELEGRAM_GROUP_ID }}
         run: >
           REPO="${{ github.repository }}";
           BRANCH="${{ github.ref_name }}";
