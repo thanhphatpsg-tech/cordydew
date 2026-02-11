@@ -1,0 +1,13 @@
+@use "abstracts/variables" as v;
+
+.page-title h1 {
+    color: v.$primary-color;
+}
+
+.page-title p.cd-page-sub {
+    color: v.$primary-color;
+}
+
+.main-menu .navbar-header .navbar-toggle .icon-bar {
+    background: v.$primary-color;
+}
