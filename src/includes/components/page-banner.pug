@@ -21,6 +21,8 @@ mixin pageBanner(opts)
     const title = o.title || '';
     const subtitleParts = Array.isArray(o.subtitleParts) ? o.subtitleParts : [];
     const subtitleClass = o.subtitleClass || 'cd-page-sub text-white';
+    const titleStyle = o.titleColor ? `color: ${o.titleColor}` : '';
+    const subtitleStyle = o.subtitleColor ? `color: ${o.subtitleColor}` : '';
 
   section.banner-section(class=`${pt} ${pb}`)
     .container
@@ -28,9 +30,9 @@ mixin pageBanner(opts)
         .col-lg-12
           .page-title.text-center
             if title
-              h1= title
+              h1(style=titleStyle)= title
             if subtitleParts.length
-              p(class=subtitleClass)
+              p(class=subtitleClass style=subtitleStyle)
                 each part in subtitleParts
                   if part.type === 'bold'
                     b= part.value
