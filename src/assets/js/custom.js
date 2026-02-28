@@ -1,5 +1,5 @@
 (function () {
-    const YT_EMBED = "https://www.youtube.com/embed/JRl7iJqFGiw?autoplay=1&mute=1";
+    const YT_EMBED = "https://www.youtube.com/embed/PFWLGSN7Wbo?si=JR5jqfBx4z1sZzhX";
 
     const modal = document.getElementById("videoModal");
     const frame = document.getElementById("videoFrame");
