@@ -52,7 +52,9 @@ function buildPug() {
     ensureDir(OUT);
 
     const siteDataPath = path.join(SRC, "data", "site.json");
+    const footerDataPath = path.join(SRC, "data", "footer.json");
     const site = fs.existsSync(siteDataPath) ? loadJson(siteDataPath) : {};
+    const footer = fs.existsSync(footerDataPath) ? loadJson(footerDataPath) : {};
 
     if (!fs.existsSync(PAGES)) return;
 
@@ -61,7 +63,7 @@ function buildPug() {
         const inFile = path.join(PAGES, file);
         const outFile = path.join(OUT, file.replace(/\.pug$/, ".html"));
 
-        const html = pug.renderFile(inFile, { pretty: true, site });
+        const html = pug.renderFile(inFile, { pretty: true, site, footer });
         fs.writeFileSync(outFile, html, "utf-8");
         console.log("PUG :", path.relative(ROOT, outFile));
     }

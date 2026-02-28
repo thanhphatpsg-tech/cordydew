@@ -1,5 +1,6 @@
 const CONTACT_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbyosSNKHFKNLR8BIbLVYAiyWY5GNFwnIc6PtAR3eaVWEv1U8mwCLYOx-dztt2arZ5mswQ/exec";
+  // "https://script.google.com/macros/s/AKfycbyosSNKHFKNLR8BIbLVYAiyWY5GNFwnIc6PtAR3eaVWEv1U8mwCLYOx-dztt2arZ5mswQ/exec";
+  "https://script.google.com/macros/s/AKfycbwBxyrqgTLBwTCkQ6_MixoiUAxGaApup0xKwn8JQWy_0VXbXmnptK3ACi22xA6t738P7g/exec";
 
 const formEl = document.getElementById("contact-form");
 

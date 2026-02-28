@@ -1,3 +1,6 @@
 ==========================
 #1 code trong thư mục pug
-#2 chạy lệnh npm run build or npm run watch
+#2 npm install 
+#3 chạy lệnh npm run dev or npm run watch
+#4 code css trong file *scss
+

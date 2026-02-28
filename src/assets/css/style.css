@@ -74,13 +74,13 @@ Footer Section
 }
 
 .hero-text p {
-    color: #fff;
+    color: #81317b;
     margin-bottom: 30px;
     font-weight: 500;
 }
 
 .hero-text h1 {
-    color: #fff;
+    color: #81317b;
     padding-bottom: 20px;
     line-height: 60px;
 }
@@ -6175,12 +6175,12 @@ body.hp-six {
     position: absolute;
     animation-duration: 2s;
     right: 0px;
-    bottom: 264px;
+    bottom: 100px;
     width: 50%;
 }
 
 .hero-animation-image.c-home img {
-    width: 55%;
+    width:80%;
 }
 
 

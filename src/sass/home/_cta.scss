@@ -1,0 +1,250 @@
+/* =================================    CSS: CordyDew Section
+================================================= */
+
+
+
+.cordydew-section {
+  padding: 110px 0;
+  position: relative;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(154, 99, 255, .10), transparent 60%),
+    radial-gradient(900px 500px at 85% 15%, rgba(54, 210, 164, .10), transparent 55%),
+    linear-gradient(180deg, #fbfbff, #ffffff);
+}
+
+
+.cordydew-title p {
+  font-size: 16px;
+  color: #5f5b75;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.cd-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(154, 99, 255, .12);
+  color: #4b2bbf;
+}
+
+.cd-cards {
+  margin-top: 38px;
+}
+
+.cd-card {
+  height: 100%;
+  background: rgba(255, 255, 255, .75);
+  border: 1px solid rgba(20, 18, 31, .08);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 10px 28px rgba(20, 18, 31, .06);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cd-card:before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(500px 220px at 30% 0%, rgba(154, 99, 255, .14), transparent 60%);
+  pointer-events: none;
+}
+
+.cd-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(20, 18, 31, .10);
+  border-color: rgba(154, 99, 255, .22);
+}
+
+.cd-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  background: rgba(154, 99, 255, .10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cd-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cd-card h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: #14121f;
+  font-weight: 800;
+}
+
+.cd-card p {
+  margin: 0;
+  color: #6a657f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cd-content {
+  margin-top: 28px;
+}
+
+.cd-box {
+  background: rgba(255, 255, 255, .85);
+  border: 1px solid rgba(20, 18, 31, .08);
+  border-radius: 18px;
+  padding: 22px 22px;
+  box-shadow: 0 10px 28px rgba(20, 18, 31, .05);
+  margin-top: 18px;
+}
+
+.cd-box h3 {
+  font-size: 20px;
+  margin: 0 0 12px;
+  color: #14121f;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.cd-muted {
+  color: #6a657f;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+.cd-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #5f5b75;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.cd-list li {
+  margin: 8px 0;
+}
+
+.cd-list-check {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cd-list-check li {
+  position: relative;
+  padding-left: 28px;
+  margin: 10px 0;
+}
+
+.cd-list-check li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(54, 210, 164, .18);
+  color: #0f8a67;
+  font-weight: 900;
+  font-size: 12px;
+  transform: translateY(2px);
+}
+
+.cd-highlight {
+  border-color: rgba(154, 99, 255, .20);
+  background: linear-gradient(180deg, rgba(154, 99, 255, .08), rgba(255, 255, 255, .9));
+}
+
+.cd-feature {
+  padding: 14px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .7);
+  border: 1px solid rgba(20, 18, 31, .06);
+  margin-top: 12px;
+}
+
+.cd-feature-title {
+  font-weight: 900;
+  color: #14121f;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.cd-feature-desc {
+  color: #5f5b75;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cd-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 12px 0 12px;
+}
+
+.cd-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(20, 18, 31, .08);
+  background: rgba(255, 255, 255, .65);
+  color: #3a3551;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.cd-step span {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(154, 99, 255, .14);
+  color: #4b2bbf;
+  font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cordydew-title h2 {
+    font-size: 30px;
+  }
+
+  .cordydew-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .cordydew-title h2 {
+    font-size: 26px;
+  }
+
+  .cd-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .cd-cards div {
+    padding-bottom: 20px;
+  }
+
+}
+
+

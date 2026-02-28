@@ -1,0 +1,221 @@
+/* =========================
+   Products Page - CordyDew
+========================= */
+.pd-subtitle {
+  margin-top: 10px;
+  opacity: 0.85;
+  font-size: 16px;
+}
+
+/* Intro background blobs */
+.pd-intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.pd-intro::before {
+  content: "";
+  position: absolute;
+  inset: -220px -220px auto auto;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.16), rgba(124, 58, 237, 0) 65%);
+  pointer-events: none;
+}
+
+.pd-intro::after {
+  content: "";
+  position: absolute;
+  inset: auto auto -260px -260px;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.14), rgba(236, 72, 153, 0) 65%);
+  pointer-events: none;
+}
+
+/* Card */
+.pd-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 18px 45px rgba(16, 24, 40, 0.08);
+  padding: 26px 24px;
+}
+
+.pd-soft {
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.06), rgba(236, 72, 153, 0.04));
+}
+
+.pd-badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+  color: #5b21b6;
+  background: rgba(124, 58, 237, 0.12);
+  margin-bottom: 10px;
+}
+
+.pd-badge-2 {
+  background: rgba(236, 72, 153, 0.12);
+  color: #be185d;
+}
+
+.pd-title {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.pd-desc {
+  opacity: 0.9;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* Feature list */
+.pd-feature-list {
+  display: grid;
+  gap: 12px;
+}
+
+.pd-feature {
+  display: flex;
+  gap: 12px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.pd-feature h6 {
+  margin-bottom: 4px;
+  font-weight: 900;
+}
+
+.pd-feature p {
+  margin: 0;
+  opacity: 0.86;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pd-ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.16);
+}
+
+.pd-ic i {
+  color: #5b21b6;
+}
+
+/* Visual */
+.pd-visual {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 18px 55px rgba(16, 24, 40, 0.1);
+  min-height: 360px;
+  background: #fff;
+}
+
+.pd-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.pd-blob {
+  position: absolute;
+  inset: -40% -30% auto auto;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.28), rgba(236, 72, 153, 0) 65%), radial-gradient(circle, rgba(124, 58, 237, 0.22), rgba(124, 58, 237, 0) 65%);
+  filter: blur(2px);
+  z-index: 1;
+}
+
+.pd-dots {
+  position: absolute;
+  inset: auto 14px 14px auto;
+  width: 160px;
+  height: 100px;
+  background-image: radial-gradient(rgba(124, 58, 237, 0.35) 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+  border-radius: 14px;
+  opacity: 0.55;
+  z-index: 3;
+}
+
+.pd-chip {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: 4;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+/* CTA */
+.pd-cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.pd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  padding: 12px 18px;
+  box-shadow: 0 16px 35px rgba(236, 72, 153, 0.18);
+}
+
+.pd-link {
+  font-weight: 900;
+  color: #5b21b6;
+  text-decoration: underline;
+}
+
+/* Bottom */
+.pd-bottom-card {
+  background: linear-gradient(90deg, rgba(124, 58, 237, 0.1), rgba(236, 72, 153, 0.08));
+  border: 1px solid rgba(124, 58, 237, 0.16);
+  border-radius: 18px;
+  padding: 22px 22px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .pd-title {
+    font-size: 24px;
+  }
+
+  .pd-visual {
+    min-height: 280px;
+  }
+}

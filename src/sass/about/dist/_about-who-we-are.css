@@ -1,0 +1,39 @@
+/* ===== Who we are ===== */
+.cd-who-title {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #7b2d8a;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.cd-who-text {
+  margin: 0;
+  color: #111;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.cd-who-media {
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cd-who-media img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cd-who-media img {
+    height: 260px;
+  }
+
+  .cd-who-text {
+    font-size: 15px;
+  }
+}

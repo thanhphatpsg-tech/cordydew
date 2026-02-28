@@ -5,7 +5,77 @@
   "keywords": "CordyDew, thạch sữa chua, probiotics, đông trùng hạ thảo, sức khỏe",
   "ogImage": "https://www.cordydew.website/assets/img/og-image.png",
   "url": "https://www.cordydew.website",
-  "email": "contact@cordydew.vn",
+  "email": "Cordydew@gmail.com",
   "phone": "0909722620",
-  "address": "140 Lê Trọng Tấn, Tân Phú, Hồ Chí Minh"
+  "address": "140 Lê Trọng Tấn, Tân Phú, Hồ Chí Minh",
+  "team_section": {
+    "title": "Đội ngũ cố vấn & phát triển",
+    "lead": "Kết nối chuyên môn vi sinh, nghiên cứu & phát triển, cùng định hướng chiến lược nhằm nâng cao chất lượng và khả năng ứng dụng của CordyDew.",
+    "members": [
+      {
+        "key": "luan",
+        "tag": { "text": "Cố vấn chuyên môn", "variant": "expert" },
+        "name": "ThS. NGUYỄN THÀNH LUÂN",
+        "role": "Giảng viên – Trường Đại học Công Thương TP. Hồ Chí Minh",
+        "meta": [
+          { "label": "Chuyên ngành", "value": "Công nghệ sinh học vi sinh &  sinh học phân tử" },
+          { "label": "", "value": "Cố vấn khoa học nền tảng vi sinh định hướng quy trình thử nghiệm & đánh giá chất lượng sản phẩm" }
+        ]
+      },
+      {
+        "key": "dieu",
+        "tag": { "text": "Cố vấn thị trường", "variant": "market" },
+        "name": "Ông LÊ XUÂN DIỆU",
+        "role": "Giám đốc – Công ty TNHH Nông nghiệp VACO (Vacofarm)",
+        "meta": [
+          { "label": "", "value": "Cố vấn định hướng thị trường & ứng dụng thực tiễn kết nối sản phẩm với nhu cầu tiêu dùng và chuỗi giá trị nông nghiệp" }
+        ]
+      },
+      {
+        "key": "thao",
+        "tag": { "text": "NHÓM TRƯỞNG DỰ ÁN NGHIÊN CỨU & PHÁT TRIỂN", "variant": "rnd" },
+        "name": "NGUYỄN HỒ THIÊN THẢO",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
+        "meta": [
+          { "label": "", "value": "Xây dựng công thức sản phẩm CordyDew. Thiết kế và tối ưu quy trình thử nghiệm. Đánh giá hiệu quả & trải nghiệm sản phẩm" }
+        ]
+      },
+      {
+        "key": "ngoc",
+        "tag": { "text": "Tài chính & Mô hình kinh doanh", "variant": "biz" },
+        "name": "NGUYỄN THỊ NGỌC",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
+        "meta": [
+          { "label": "", "value": "Phân tích chi phí – giá thành. Xây dựng mô hình kinh doanh & tính khả thi thị trường" }
+        ]
+      },
+      {
+        "key": "giang",
+        "tag": { "text": "Tiếp thị & Phát triển thị trường", "variant": "mkt" },
+        "name": "NGUYỄN HƯƠNG GIANG",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
+        "meta": [
+          { "label": "", "value": "Nghiên cứu hành vi người tiêu dùng. Xây dựng thông điệp & định vị sản phẩm" }
+        ]
+      },
+      {
+        "key": "huy",
+        "tag": { "text": "KHẢO SÁT NGƯỜI DÙNG & SẢN PHẨM", "variant": "sales" },
+        "name": "CAO NGỌC LÊ HUY",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
+        "meta": [
+          { "label": "", "value": "Thiết kế khảo sát trải nghiệm sản phẩm. Thu thập & phân tích phản hồi người dùng" }
+        ]
+      },
+      {
+        "key": "phat",
+        "tag": { "text": "TRUYỀN THÔNG SỐ & NỘI DUNG", "variant": "digital" },
+        "name": "NGUYỄN THÀNH PHÁT",
+        "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
+        "meta": [
+          { "label": "", "value": "Xây dựng nội dung truyền thông số. Hỗ trợ hình ảnh thương hiệu & nền tảng online" }
+        ]
+      }
+    ]
+  }
 }

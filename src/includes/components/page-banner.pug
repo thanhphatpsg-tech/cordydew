@@ -1,0 +1,38 @@
+//- Reusable Page Banner
+//- Usage:
+//-   include ../components/page-banner.pug
+//-   +pageBanner({
+//-     title: 'Hai dòng sản phẩm nổi bật',
+//-     subtitleParts: [
+//-       { type: 'text', value: 'CordyDew tập trung trải nghiệm người dùng trẻ: ' },
+//-       { type: 'bold', value: 'ngon – tiện – dễ duy trì mỗi ngày' },
+//-       { type: 'text', value: '. Hai sản phẩm dưới đây là hướng phát triển chủ đạo.' },
+//-     ],
+//-     pt: 'pt-200',
+//-     pb: 'pb-175',
+//-     subtitleClass: 'cd-page-sub text-white'
+//-   })
+
+mixin pageBanner(opts)
+  -
+    const o = opts || {};
+    const pt = o.pt || 'pt-200';
+    const pb = o.pb || 'pb-175';
+    const title = o.title || '';
+    const subtitleParts = Array.isArray(o.subtitleParts) ? o.subtitleParts : [];
+    const subtitleClass = o.subtitleClass || 'cd-page-sub text-white';
+
+  section.banner-section(class=`${pt} ${pb}`)
+    .container
+      .row
+        .col-lg-12
+          .page-title.text-center
+            if title
+              h1= title
+            if subtitleParts.length
+              p(class=subtitleClass)
+                each part in subtitleParts
+                  if part.type === 'bold'
+                    b= part.value
+                  else
+                    | #{part.value}

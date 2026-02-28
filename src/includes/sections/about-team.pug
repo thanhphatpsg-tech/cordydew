@@ -1,0 +1,45 @@
+- var section = (site && site.team_section) ? site.team_section : {}
+- var members = (section && section.members) ? section.members : []
+
+section.our-team-section.pt-120.pb-100.bg-gray.cd-team.cd-team--poster
+  .container
+    .row.justify-content-center
+      .col-lg-7.text-center
+        .section-title
+          h2= section.title || ''
+          p= section.lead || ''
+
+    .row
+      .col-lg-12.team-slider.owl-carousel
+        each m in members
+          - var key = m && m.key ? m.key : ''
+          - var tag = (m && m.tag) ? m.tag : {}
+          - var tagText = (tag && tag.text) ? tag.text : ''
+          - var meta = (m && m.meta) ? m.meta : []
+
+          .single-team-member.cd-member.cd-poster
+            .cd-poster__inner
+              .cd-poster__top
+                .cd-poster__avatar
+                  .cd-thumb.cd-avatarBg(class=('thumb-' + key))
+                if tagText
+                  //- .cd-poster__badge= tagText
+
+              .cd-poster__body
+                if tagText
+                  .cd-poster__kicker= tagText.toUpperCase()
+
+                h5.cd-poster__name= (m && m.name) ? m.name : ''
+                h6.cd-poster__role= (m && m.role) ? m.role : ''
+
+                if meta.length
+                  .cd-poster__meta
+                    each item in meta
+                      .cd-poster__metaRow
+                        if item && item.label
+                          b #{item.label}:
+                        if item && item.value
+                          span #{item.value}
+
+                if m && m.desc
+                  p.cd-poster__desc= m.desc
