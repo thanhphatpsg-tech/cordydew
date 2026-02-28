@@ -56,7 +56,7 @@ $video-close-bg-hover: rgba(255, 255, 255, 0.28);
 
   .brand {
     display: block;
-    font-size: 64px;
+    font-size: 90px;
     font-weight: 900;
     letter-spacing: 0.5px;
     color: $hero-text;
@@ -66,7 +66,7 @@ $video-close-bg-hover: rgba(255, 255, 255, 0.28);
   .slogan {
     display: inline-block;
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: $hero-slogan-color;
@@ -75,7 +75,7 @@ $video-close-bg-hover: rgba(255, 255, 255, 0.28);
 
 .hero-subtitle {
   margin: 0 0 10px;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.25;
   color: $hero-subtitle;
   font-family: "Montserrat", "Segoe UI", system-ui, sans-serif;
