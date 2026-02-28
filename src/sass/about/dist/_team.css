@@ -144,31 +144,31 @@
 
 /* Thumb background placeholders (đổi ảnh thật sau) */
 .cd-team .thumb-luan {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/thanh_luan.png);
 }
 
 .cd-team .thumb-dieu {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/xuan_dieu.png);
 }
 
 .cd-team .thumb-thao {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/thien_thao.png);
 }
 
 .cd-team .thumb-ngoc {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/thi_ngoc.png);
 }
 
 .cd-team .thumb-giang {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/giang.png);
 }
 
 .cd-team .thumb-huy {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/huy.png);
 }
 
 .cd-team .thumb-phat {
-  background-image: url(../img/home-seven/team-1.png);
+  background-image: url(../img/home-seven/phat.png);
 }
 
 /* =========================
@@ -541,7 +541,7 @@
   margin: 0 0 12px;
   font-weight: 800;
   font-size: 12.5px;
-  color: rgba(15, 23, 42, 0.68);
+  color: #23778e;
   line-height: 1.45;
 }
 
@@ -554,11 +554,11 @@
 .cd-team--poster .cd-poster__metaRow {
   font-size: 12.5px;
   line-height: 1.45;
-  color: rgba(15, 23, 42, 0.76);
+  color: #23778e;
 }
 
 .cd-team--poster .cd-poster__metaRow b {
-  color: rgba(15, 23, 42, 0.86);
+  color: #23778e;
   font-weight: 900;
   margin-right: 6px;
 }
