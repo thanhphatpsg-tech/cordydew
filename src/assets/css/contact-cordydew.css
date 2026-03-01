@@ -195,6 +195,10 @@
   font-weight: 800;
 }
 
+.lowercase-email {
+    text-transform: lowercase !important;
+}
+
 .cd-dot{
   margin: 0 8px;
   opacity: .6;
