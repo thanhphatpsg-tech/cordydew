@@ -10,7 +10,7 @@ section.cd-quality.pt-70.pb-70
       .col-lg-4
         .cd-qcard
           .cd-qcard-media
-            img.cd-qcard-img(
+            img.cd-qcard-img.js-zoom-img(
               src="assets/img/products/product-02.jpg"
               alt="Kết quả kiểm nghiệm - An toàn vi sinh"
             )
@@ -22,7 +22,7 @@ section.cd-quality.pt-70.pb-70
       .col-lg-4
         .cd-qcard
           .cd-qcard-media
-            img.cd-qcard-img(
+            img.cd-qcard-img.js-zoom-img(
               src="assets/img/products/product-03.jpg"
               alt="Kết quả kiểm nghiệm - Giá trị dinh dưỡng"
             )
@@ -34,10 +34,18 @@ section.cd-quality.pt-70.pb-70
       .col-lg-4
         .cd-qcard
           .cd-qcard-media
-            img.cd-qcard-img(
+            img.cd-qcard-img.js-zoom-img(
               src="assets/img/products/product-04.jpg"
               alt="Kết quả kiểm nghiệm - Kim loại nặng & độc tố"
             )
           h4.cd-qcard-title Kim loại nặng & độc tố
           p.cd-qcard-desc
             | Không phát hiện: Thủy ngân (Hg), Asen (As), Chì (Pb), Cadimi (Cd) và Aflatoxin M1
+
+  // Lightbox (đặt cuối section cũng được)
+  #cdLightbox.cd-lightbox
+    button.cd-lightbox-close(type="button" aria-label="Đóng") ×
+
+    button.cd-lightbox-nav.cd-lightbox-prev(type="button" aria-label="Ảnh trước") ‹
+    img#cdLightboxImg.cd-lightbox-img(src="" alt="")
+    button.cd-lightbox-nav.cd-lightbox-next(type="button" aria-label="Ảnh sau") ›
