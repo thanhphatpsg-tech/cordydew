@@ -844,8 +844,8 @@ Footer Section
 
 .funfact.style-2 {
     position: relative;
-    background-color: #696CFD;
-    background: url(../img/home-seven/funfact-bg.png);
+    /* background-color: #696CFD; */
+    /* background: url(../img/home-seven/funfact-bg.png); */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;

@@ -33,7 +33,7 @@
       },
       {
         "key": "thao",
-        "tag": { "text": "NHÓM TRƯỞNG DỰ ÁN NGHIÊN CỨU & PHÁT TRIỂN", "variant": "rnd" },
+        "tag": { "text": "TRƯỞNG NHÓM - NGHIÊN CỨU & PHÁT TRIỂN", "variant": "rnd" },
         "name": "NGUYỄN HỒ THIÊN THẢO",
         "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
@@ -51,7 +51,7 @@
       },
       {
         "key": "giang",
-        "tag": { "text": "Tiếp thị & Phát triển thị trường", "variant": "mkt" },
+        "tag": { "text": "Marketing & Phát triển thị trường", "variant": "mkt" },
         "name": "NGUYỄN HƯƠNG GIANG",
         "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
@@ -60,7 +60,7 @@
       },
       {
         "key": "huy",
-        "tag": { "text": "KHẢO SÁT NGƯỜI DÙNG & SẢN PHẨM", "variant": "sales" },
+        "tag": { "text": "Tiếp thị & khảo sát thị trường", "variant": "sales" },
         "name": "CAO NGỌC LÊ HUY",
         "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
@@ -69,7 +69,7 @@
       },
       {
         "key": "phat",
-        "tag": { "text": "TRUYỀN THÔNG SỐ & NỘI DUNG", "variant": "digital" },
+        "tag": { "text": "TRUYỀN THÔNG SỐ", "variant": "digital" },
         "name": "NGUYỄN THÀNH PHÁT",
         "role": "Sinh viên - Trường Đại học Công Thương Thành phố Hồ Chí Minh",
         "meta": [
