@@ -62,9 +62,6 @@ async function loadSurveyStatsToFunfact() {
     if (!json.ok) throw new Error(json.error || "Cannot load stats");
 
     const s = json.stats || {};
-
-    await new Promise((r) => setTimeout(r, 100));
-
     setCount("stat_total", s.total ?? 0);
     setCount("stat_today", s.today ?? 0);
     setCount("stat_age_groups", s.age_groups ?? 0);

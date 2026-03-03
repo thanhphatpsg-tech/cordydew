@@ -155,15 +155,15 @@
 
     /*========== Start Counter To Js funfact   ==========*/
 
-    if ($('.funfact').length) {
-        $(window).on('scroll.funfact', function () {
-            var stat = $('.funfact');
-            if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
-                $('.count').countTo();
-                $(window).off('scroll.funfact');
-            }
-        });
-    }
+    // if ($('.funfact').length) {
+    //     $(window).on('scroll.funfact', function () {
+    //         var stat = $('.funfact');
+    //         if ($(this).scrollTop() >= stat.offset().top - $(window).height() + 50) {
+    //             $('.count').countTo();
+    //             $(window).off('scroll.funfact');
+    //         }
+    //     });
+    // }
 
     /*========== end Counter To Js funfact   ==========*/
 
