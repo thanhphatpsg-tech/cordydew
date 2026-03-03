@@ -1,38 +1,38 @@
 (function () {
-    const YT_EMBED = "https://www.youtube.com/embed/PFWLGSN7Wbo?si=JR5jqfBx4z1sZzhX";
+  const YT_EMBED = "https://www.youtube.com/embed/PFWLGSN7Wbo?si=JR5jqfBx4z1sZzhX";
 
-    const modal = document.getElementById("videoModal");
-    const frame = document.getElementById("videoFrame");
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
 
-    function openVideo() {
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        frame.src = YT_EMBED;
+  function openVideo() {
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    frame.src = YT_EMBED;
+  }
+
+  function closeVideo() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    frame.src = ""; // tắt video khi đóng
+  }
+
+  document.addEventListener("click", function (e) {
+    const openBtn = e.target.closest("[data-video-open]");
+    const closeBtn = e.target.closest("[data-video-close]");
+
+    if (openBtn) {
+      e.preventDefault();
+      openVideo();
     }
-
-    function closeVideo() {
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        frame.src = ""; // tắt video khi đóng
+    if (closeBtn) {
+      e.preventDefault();
+      closeVideo();
     }
+  });
 
-    document.addEventListener("click", function (e) {
-        const openBtn = e.target.closest("[data-video-open]");
-        const closeBtn = e.target.closest("[data-video-close]");
-
-        if (openBtn) {
-            e.preventDefault();
-            openVideo();
-        }
-        if (closeBtn) {
-            e.preventDefault();
-            closeVideo();
-        }
-    });
-
-    document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && modal.classList.contains("is-open")) closeVideo();
-    });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) closeVideo();
+  });
 })();
 // ================
 // const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzaxQIjA3dJ5HExlIrMPjBICSxUkVfeccrLXFiN1V3ML4SaJpH5DBUaihalPWO82Ilo/exec";
@@ -50,33 +50,35 @@ const AGE_LABEL_MAP = {
 
 function normalizeAgeLabel(v) {
   const key = String(v ?? "").trim();
-  return AGE_LABEL_MAP[key] ?? key; // không có trong map thì giữ nguyên
+  return AGE_LABEL_MAP[key] ?? key; 
 }
 
 async function loadSurveyStatsToFunfact() {
   try {
-    const res = await fetch(`${SHEETS_WEBAPP_URL}?mode=stats&t=${Date.now()}`);
+    const res = await fetch(`${SHEETS_WEBAPP_URL}?mode=stats&t=${Date.now()}`, {
+      cache: "no-store",
+    });
     const json = await res.json();
-    console.log(json);
-
     if (!json.ok) throw new Error(json.error || "Cannot load stats");
+
     const s = json.stats || {};
+
+    await new Promise((r) => setTimeout(r, 100));
 
     setCount("stat_total", s.total ?? 0);
     setCount("stat_today", s.today ?? 0);
-
-    // top_age: chuyển under18 -> Dưới 18, K -> K (hoặc label bạn muốn)
-    // const topAgeEl = document.getElementById("stat_top_age");
-    // if (topAgeEl) {
-    //   const label = normalizeAgeLabel(s.top_age);
-    //   topAgeEl.textContent = (label && label !== "unknown") ? label : "—";
-    // }
-
     setCount("stat_age_groups", s.age_groups ?? 0);
 
+    document.dispatchEvent(new CustomEvent("survey:statsLoaded", { detail: s }));
   } catch (e) {
     console.warn("loadSurveyStatsToFunfact:", e);
   }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadSurveyStatsToFunfact);
+} else {
+  loadSurveyStatsToFunfact();
 }
 
 function setCount(id, value) {
