@@ -1,17 +1,32 @@
 // TESTIMONIAL
 section.cordydew-testimonial
   .container
-    .testimonial-header
+    .testimonial-header.text-center
       h2.testimonial-title Cảm nhận của khách hàng
+      p.testimonial-subtitle Những chia sẻ thật lòng từ những người đã tin dùng CordyDew
 
-    .testimonial-wrap
-      .testimonial-media
-        img(
-          src="assets/img/home-seven/testimonial.jpg"
-          alt="Khách hàng chia sẻ về CordyDew"
-        )
-
-      .testimonial-content
+    .testimonial-grid
+      .testimonial-card
+        .quote-icon: i.fa.fa-quote-left
         p.testimonial-text
-          | CordyDew như một lựa chọn dinh dưỡng lành mạnh cho cả gia đình
-          | tiện lợi mỗi ngày và an tâm nhờ nền tảng khoa học rõ ràng.
+          | "CordyDew như một lựa chọn dinh dưỡng lành mạnh cho cả gia đình, tiện lợi mỗi ngày và an tâm nhờ nền tảng khoa học rõ ràng."
+        .testimonial-author
+          .author-media
+            img(src="assets/img/home-seven/thi_ngoc_small.png" alt="Chị Ngọc")
+          .author-info
+            h4.author-name Chị Ngọc
+            p.author-role Nội trợ
+
+      .testimonial-card
+        .quote-icon: i.fa.fa-quote-left
+        p.testimonial-text
+          | "Sử dụng CordyDew mỗi ngày giúp mình cảm thấy cơ thể nhẹ nhàng hơn, tiêu hóa tốt và tràn đầy năng lượng cho công việc."
+        .testimonial-author
+          .author-media
+            img(src="assets/img/home-seven/thanh_luan_small.png" alt="Anh Luân")
+          .author-info
+            h4.author-name Anh Luân
+            p.author-role Nhân viên văn phòng
+
+
+
